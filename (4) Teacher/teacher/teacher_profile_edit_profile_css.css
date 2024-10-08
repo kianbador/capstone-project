@@ -1,0 +1,259 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Consistent font size for smaller buttons */
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Consistent padding */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.profile {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+/* (Unchanged from your original code) */
+
+/* Edit Profile Section */
+.edit-profile-section {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.edit-profile-section h2 {
+    font-size: 28px;
+    color: #1F4A7C;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adds space between the profile image and the form */
+}
+
+/* Container for the profile image and the hover effect */
+.profile-image {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px; /* Adjusted size */
+    height: 150px; /* Adjusted size */
+    overflow: hidden; /* Ensures the image fits inside the circle */
+    cursor: pointer;
+}
+
+/* The profile image itself */
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.profile-form {
+    width: 100%;
+}
+
+/* Styling for form groups with smaller input fields */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Styling for full-width fields */
+.form-group.full-width {
+    justify-content: center;
+    gap: 0;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 15px 40px 15px 10px; /* Increase padding for thicker appearance */
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrapper input::placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.required-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px; /* Adjust size of required icon */
+    height: 15px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn, .update-btn {
+    width: 45%;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.cancel-btn {
+    background-color:white;
+    border: 1px solid #082F96;
+    color: #082F96;
+}
+
+.update-btn {
+    background-color: #082F96;
+    color: white;
+}
+
+.cancel-btn:hover, .update-btn:hover {
+    opacity: 0.9;
+}
+
+.upload-button {
+    display: inline-block;
+    background-color: #1F4A7C; /* Your desired button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px; /* Space between image and button */
+}
+
+.upload-button:hover {
+    background-color: #082F96; /* Darker shade on hover */
+}
+
+/* The hover effect with text or icon */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for hover */
+    font-size: 14px;
+}
+
+/* On hover, the overlay becomes visible */
+.profile-image:hover .overlay {
+    opacity: 1;
+}
+
+/* Hide the file input */
+#imageUpload {
+    display: none;
+}   

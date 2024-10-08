@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admin Login - Performance Evaluation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-background"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='css/Assets/DepEdLogo.png.png') }}"  alt="DepEd Logo">
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="teacher-login">
+            <div class="teacher-login-content">
+                <h1>Performance Evaluation System</h1>
+                <p>The Performance Evaluation System offers a seamless and transparent way to evaluate and improve faculty performance.
+                It empowers educators with insightful feedback and fosters professional growth.</p>
+            </div>
+            
+            <div class="teacher-login-section">
+                <h2>Login</h2>
+                
+                <form action="/login/teacher" method="post">
+                    <input type="text" placeholder="EMPLOYEE ID" name="empid" class="log-input">
+                    <input type="password" placeholder="PASSWORD" name="pw" class="log-input">
+                    <small style="color: red;">{{error2}}</small>
+                    <small style="color: red;">{{error1}}</small>
+                    
+                    <div class="log-options">
+                        <div class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="log-btn">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

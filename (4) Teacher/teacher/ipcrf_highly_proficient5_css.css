@@ -1,0 +1,220 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Consistent font size for smaller buttons */
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Consistent padding */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.forms {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+}
+.header {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px 2.5%;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+th {
+    background-color: #17B1EA;
+    font-weight: bold;
+}
+td.red-cell {
+    background-color: #ffcccb;
+    height: 30px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+.blue-cell {
+    background-color: #5cc7ee;
+    font-weight: bold;
+}
+.black-cell {
+    background-color: black;
+    font-weight: bold;
+}
+.final-rating {
+    background-color: #ddd;
+    font-weight: bold;
+}
+.comment-section {
+    width: 95%;
+    margin: 20px 2.5%;
+}
+textarea {
+    width: 98%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.signature-section p {
+    margin: 10px 0;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%; 
+    margin: 20px 2.5%;
+}
+
+.signatures div {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    padding-top: 20px; 
+}
+
+.signatures .name {
+    font-weight: bold;
+}
+
+.signatures .line {
+    display: block;
+    width: 80%; 
+    border-top: 1px solid black;
+    margin: 5px auto 0; 
+}
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button, .proceed-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-button {
+    background-color: white;
+    color: #0051a2; 
+    border: 1px solid #0051a2;
+    border-radius: 5px; /* Optional: Keep it rounded if desired */
+    padding: 10px 20px; /* Ensure padding is set */
+    outline: none; /* Remove default outline */
+}
+
+.proceed-button {
+    background-color: #0051a2;
+    color: white;
+}
+
+table:first-of-type td {
+    text-align: left;
+}
+
+.part3 {
+    text-align: center;
+    background-color: #d3d3d3; 
+    padding: 5px;
+    font-weight: bold;
+    margin: 20px 2.5%;
+    width: 94%;
+    font-size: 18px;
+}

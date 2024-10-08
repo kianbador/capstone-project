@@ -1,0 +1,1502 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Background Styles */
+.header-background {
+    width: 100%; 
+    height: 54px; 
+    background-color: #fff; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9; 
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    z-index: 10; 
+}
+
+nav {
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    position: absolute;
+}
+
+nav ul li:nth-child(1) {
+    left: 950px; 
+    top: 10px;
+}
+
+nav ul li:nth-child(2) {
+    left: 1050px; 
+    top: 10px; 
+}
+
+nav ul li:nth-child(3) {
+    left: 1150px; 
+    top: 10px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    font-size: 12px; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; 
+    gap: 6px; 
+    transition: background-color 0.3s;
+    background-color: transparent; 
+}
+
+nav ul li a.active {
+    background-color: #C10001; 
+    color: #fff;
+}
+
+nav ul li a i {
+    font-size: 1.2em; 
+}
+
+.logo img {
+    width: 90px; 
+    height: 50px; 
+    position: absolute;
+    top: 2px; 
+    left: 36px; 
+    z-index: 11;
+}
+
+/* Hero Section */
+.get-started, .hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat; 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 100vh; 
+    padding: 0 50px;
+    position: relative;
+    z-index: 1; 
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: -450px;
+    margin-top: 40px;
+    font-weight: normal;
+    line-height: 27px;
+    z-index: 2; 
+}
+
+.get-started h1, .hero h1 {
+    font-size: 3.5em;
+    line-height: 70.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.get-started p, .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #C10001; 
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 250px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 25px;
+    margin-top: 20px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s, border 0.3s;
+    text-align: center; 
+}
+
+
+.button:hover {
+    background-color: #FBFCF8; 
+    color: #C10001; 
+    border: 2px solid #C10001; /* Outline on hover */
+}
+
+/* About Us Section */
+.about-us-background {
+    width: 100%; 
+    height: 100px; 
+    background-image: url('Assets/Frame 9.png'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    top: 54px; 
+    z-index: 8; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-title {
+    color: #fff;
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center; 
+}
+
+/* About Us Content */
+.about-us-content {
+    padding: 40px 50px;
+    background-color: #f9f9f9; 
+    color: #333;
+    margin-top: 70px;
+}
+
+.about-us-content h2 {
+    color: #082F96;
+    font-weight: bold; 
+    font-size: 1.8em; 
+    margin-bottom: 20px;
+}
+
+.about-us-content p {
+    font-size: 1em; 
+    line-height: 1.6; 
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Highlight class for headings */
+.highlight {
+    color: #082F96; 
+    font-weight: bold; 
+}
+
+.contact-us-background {
+    width: 100%; 
+    height: 100px; 
+    background-image: url('Assets/Frame 9.png'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    top: 54px; 
+    z-index: 8; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    padding: 40px 50px;
+    background-color: transparent; /* Make the background transparent */
+    color: #082F96; /* Text color */
+    margin-left: 100px;
+    margin-top: 150px; /* Adjust margin to push the content further down */
+}
+
+.contact-us-content h2 {
+    color: #082F96; /* Blue color for headings */
+    font-weight: bold; /* Bold text */
+    font-size: 1.8em; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.contact-us-content p {
+    font-size: 1em; /* Adjust font size as needed */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.contact-text {
+    flex: 1; /* Allow text to take up available space */
+}
+
+.contact-image {
+    flex: 0 0 auto; /* Prevent the image from growing or shrinking */
+    margin-left: 650px; /* Add some space between text and image */
+}
+
+.contact-image img {
+    margin-top: -300px;
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Maintain aspect ratio */
+}
+
+/* Get Started Section */
+.get-started {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat;
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 50px;
+    height: 100vh; 
+    position: relative;
+    z-index: 1; 
+}
+
+.get-started-content {
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: 90px;
+    z-index: 2;
+}
+
+
+.register-login {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+    margin-top: -350px;
+    margin-left: 850px; 
+    z-index: 2; 
+}
+
+.register-login h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+}
+
+.register-login .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px; 
+}
+
+.register-btn {
+    background-color: #082F96;
+    color: #fff;
+    font-size: 1.3em !important;
+    width: 100px; 
+    height: 60px; 
+    border-radius: 20px;
+    text-decoration: none; 
+}
+
+.register-btn:hover {
+    background-color: #FFFFFF; 
+    color: #082F96; 
+    border: 2px solid #082F96; 
+    border-radius: 20px;
+}
+
+.login-btn {
+    background-color: #d00;
+    color: #fff;
+    font-size: 1.3em !important;
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    text-decoration: none; 
+}
+
+.login-btn:hover {
+    background-color: #FFFFFF; 
+    color: #C10001; 
+    border: 2px solid #C10001; 
+    border-radius: 20px;
+}
+
+.terms {
+    font-size: 0.7em !important;
+    color: #333;
+    margin-top: 30px;
+}
+
+.terms a {
+    color: #d00;
+    text-decoration: none;
+}
+
+/* General Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login Page Styles */
+.login-page {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 50px;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.login-content{
+    max-width: 600px;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-weight: normal;
+    line-height: 27px;
+    z-index: 2; 
+}
+
+.login-content h1 {
+    font-size: 3.5em;
+    line-height: 70.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.login-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.roles-login {
+    background: #fff;
+    padding: 80px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 430px; 
+    margin-top: 50px; 
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.roles-login h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: -30px;
+    margin-bottom: 8px; 
+    padding-bottom: 20px; 
+}
+
+.roles-login a {
+    display: inline-block; 
+    text-align: center;
+    padding: 10px; 
+    font-size: 1.5em;
+    margin: 8px 2px; 
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Button Styles */
+.admin-btn {
+    background-color: #082F96;
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 7px;
+    width: 280px; 
+    height: 55px;
+}
+
+.school-admin-btn {
+    background-color: #00B4D8;
+    color: #fff;
+    font-size: 1.5em;
+    width: 280px;
+    height: 55px; 
+}
+
+.evaluator-btn {
+    background-color: #90E0EF;
+    color: #082F96;
+    font-size: 1.5em;
+    width: 280px; 
+    height: 55px; 
+}
+
+.teacher-btn {
+    background-color: #CAF0F8;
+    color: #082F96;
+    font-size: 1.5em;
+    width: 280px; 
+    height: 55px; 
+}
+
+/* Button Hover Effects */
+.admin-btn:hover {
+    background-color: #C10001;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-size: 1.65em;
+}
+
+.school-admin-btn:hover {
+    background-color: #C10001;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-size: 1.65em;
+}
+
+.evaluator-btn:hover {
+    background-color: #C10001;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-size: 1.65em;
+}
+
+.teacher-btn:hover {
+    background-color: #C10001;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    font-size: 1.65em;
+}
+
+.logo img {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    top: 2px;
+    left: 36px;
+    z-index: 11;
+}
+
+/* Register Section Styles */
+.register-school-section {
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+    align-items: center; 
+    text-align: center;
+}
+
+.register-heading {
+    color: #082F96;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: -60px;
+}
+
+.upload-logo {
+margin-bottom: 30px;
+margin-top: -10px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center; 
+position: relative; 
+}
+
+.file-input-wrapper {
+display: flex; 
+justify-content: center;
+margin-top: 7px;
+}
+
+.upload-logo label {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.upload-icon {
+    font-size: 80px;
+    color: #082F96;
+    margin-bottom: 20px; 
+}
+
+.upload-icon img {
+    width: 100px; 
+    height: 100px; 
+}
+
+.upload-logo input[type="file"] {
+    position: absolute;
+    transform: translateY(-50%); 
+    display: block;
+    margin: 0; 
+    right: 450px;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 9px;
+    text-align: left;
+    width: 300px;
+    margin-left: 450px;
+    margin-right: auto;
+}
+
+.form-field input {
+    width: 100%;
+    width: 350px; 
+    padding: 15px 30px 15px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 47px; 
+}
+
+/* Dropdown Styles */
+.form-field {
+    position: relative; 
+}
+
+/* Dropdown Styles */
+.school-type-dropdown {
+    width: 100%;
+    width: 350px; 
+    padding: 10px 30px 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 45px;
+    background-color: #fff; 
+    color: #333; 
+    appearance: none; 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin-bottom: 1px; 
+    padding-right: 30px; 
+    position: relative; 
+}
+
+
+/* Dropdown Icon Styles */
+.dropdown-icon {
+    position: absolute;
+    right: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #082F96;
+    font-size: 11px; 
+    pointer-events: none; 
+}
+
+/* Required Icon Styles */
+.req-icon {
+    color: #FF0000; 
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.required-icon {
+    color: #d00;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    pointer-events: none; 
+}
+
+.form-field input:placeholder-shown + .required-icon {
+    display: block; 
+}
+
+.form-field input:not(:placeholder-shown) + .required-icon {
+    display: none; 
+}
+
+.file-chosen-text {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Button Container */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+/* Button Styles */
+.reg-btn, .cancel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; 
+    height: 30px;
+    border-radius: 25px; 
+    text-align: center;
+    line-height: 40px; 
+    font-size: 0.9em; 
+    margin-top: 25px;
+    font-weight: bold;                            
+    text-decoration: none;                        
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    padding: 0;                                  
+    border: 2px solid transparent;                
+    font-family: 'Poppins', sans-serif;           
+}
+
+/* Register Button */
+.reg-btn {
+    background-color: #082F96;
+    color: #fff;
+    border: 2px solid #082F96;
+}
+
+.reg-btn:hover {
+    background-color: #C10001; 
+    color: #FFFFFF; 
+    border: 2px solid #C10001; 
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background-color: #FFFFFF;
+    color: #082F96;
+    border: 2px solid #082F96; 
+}
+
+.cancel-btn:hover {
+    background-color: #C10001; 
+    color: #FFFFFF; 
+    border: 2px solid #C10001; 
+}
+
+
+/* Admin */
+.admin-login {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100vh;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.admin-login-content {
+    max-width: 600px;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-weight: normal;
+    line-height: 27px;
+    z-index: 2; 
+}
+
+.admin-login h1 {
+    font-size: 3.5em;
+    line-height: 70.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.admin-login p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Center and Right-Aligned Register/Log In Section */
+.admin-login-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: 50px; 
+    z-index: 2;
+}
+
+.admin-login-section h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3em;
+    font-weight: bold !important;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: -230px;
+    padding-bottom: 25px;
+}
+
+/* Textbox */
+.log-input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: -190px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add specific styling for the checkbox */
+.log-options input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+/* Styling for Remember Me checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none; 
+    width: 18px; 
+    height: 18px;
+    border: 2px solid #333; 
+    border-radius: 3px; 
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* Style for the checked state */
+.remember-me input[type="checkbox"]:checked {
+    background-color: #082F96; 
+    border: 2px solid #082F96; 
+}
+
+/* Custom checkmark */
+.remember-me input[type="checkbox"]:checked::after {
+    content: '✔'; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 14px;
+}
+
+
+/* Styling for Forgot Password */
+.forgot-password {
+    margin-left: auto; 
+    color: #333;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #C10001; 
+    font-size: 12px;
+}
+
+/* remeber-forgot */
+.log-options {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: -12px;
+}
+
+.log-btn {
+    width: 100%;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: #082F96;
+    color: white;
+    border: none;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* School Admin */
+.school-admin-login {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100vh;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.school-admin-login-content {
+    max-width: 600px;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-weight: normal;
+    line-height: 27px;
+    z-index: 2; 
+}
+
+.school-admin-login h1 {
+    font-size: 3.5em;
+    line-height: 70.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.school-admin-login p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Center and Right-Aligned Register/Log In Section */
+.school-admin-login-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: auto; 
+    margin-right: 50px;
+    z-index: 2;
+}
+
+.school-admin-login-section h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3em;
+    font-weight: bold !important;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: -230px;
+    padding-bottom: 25px;
+}
+
+/* Textbox */
+.log-input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: -190px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add specific styling for the checkbox */
+.log-options input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+/* Styling for Remember Me checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none; 
+    width: 18px; 
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 3px; 
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px; 
+    margin-right: 10px;
+}
+
+/* Style for the checked state */
+.remember-me input[type="checkbox"]:checked {
+    background-color: #082F96; 
+    border: 2px solid #082F96; 
+}
+
+/* Custom checkmark */
+.remember-me input[type="checkbox"]:checked::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 14px;
+}
+
+/* Styling for Forgot Password */
+.forgot-password {
+    margin-left: auto; 
+    color: #333;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #C10001; 
+    font-size: 12px;
+}
+
+/* remeber-forgot */
+.log-options {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: -12px;
+}
+
+.log-btn {
+    width: 100%;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: #082F96;
+    color: white;
+    border: none;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Admin */
+.admin-login {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100vh;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.admin-login-content {
+    max-width: 600px;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-weight: normal;
+    line-height: 27px;
+    z-index: 2; 
+}
+
+.admin-login h1 {
+    font-size: 3.5em;
+    line-height: 70.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.admin-login p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Center and Right-Aligned Register/Log In Section */
+.admin-login-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: auto; 
+    margin-right: 50px; 
+    z-index: 2;
+}
+
+.admin-login-section h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3em;
+    font-weight: bold !important;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: -230px;
+    padding-bottom: 25px;
+}
+
+/* Textbox */
+.log-input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: -190px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add specific styling for the checkbox */
+.log-options input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+/* Styling for Remember Me checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #333; 
+    border-radius: 3px; 
+    outline: none; 
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px; 
+    margin-right: 10px;
+}
+
+/* Style for the checked state */
+.remember-me input[type="checkbox"]:checked {
+    background-color: #082F96; 
+    border: 2px solid #082F96; 
+}
+
+/* Custom checkmark */
+.remember-me input[type="checkbox"]:checked::after {
+    content: '✔'; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 14px;
+}
+
+
+/* Styling for Forgot Password */
+.forgot-password {
+    margin-left: auto; 
+    color: #333;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #C10001; 
+    font-size: 12px;
+}
+
+/* remeber-forgot */
+.log-options {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: -12px;
+}
+
+.log-btn {
+    width: 100%;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: #082F96;
+    color: white;
+    border: none;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Evaluator */
+.evaluator-login {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100vh;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.evaluator-login-content {
+    max-width: 600px;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-weight: normal;
+    line-height: 27px;
+    z-index: 2; 
+}
+
+.evaluator-login h1 {
+    font-size: 3.5em;
+    line-height: 70.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.evaluator-login p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Center and Right-Aligned Register/Log In Section */
+.evaluator-login-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: 50px;
+    z-index: 2;
+}
+
+.evaluator-login-section h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3em;
+    font-weight: bold !important;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: -230px;
+    padding-bottom: 25px;
+}
+
+/* Textbox */
+.log-input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: -190px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add specific styling for the checkbox */
+.log-options input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+/* Styling for Remember Me checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none; 
+    width: 18px; 
+    height: 18px;
+    border: 2px solid #333;
+    border-radius: 3px; 
+    outline: none; 
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px; 
+    margin-right: 10px;
+}
+
+/* Style for the checked state */
+.remember-me input[type="checkbox"]:checked {
+    background-color: #082F96; 
+    border: 2px solid #082F96; 
+}
+
+/* Custom checkmark */
+.remember-me input[type="checkbox"]:checked::after {
+    content: '✔'; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 14px;
+}
+
+/* Styling for Forgot Password */
+.forgot-password {
+    margin-left: auto; 
+    color: #333;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #C10001;
+    font-size: 12px;
+}
+
+/* remeber-forgot */
+.log-options {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: -12px;
+}
+
+.log-btn {
+    width: 100%;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: #082F96;
+    color: white;
+    border: none;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Teacher */
+.teacher-login {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), 
+                url('Assets/background.jpg.png') center center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100vh;
+    padding: 0 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.teacher-login-content {
+    max-width: 600px;
+    margin-left: 80px;
+    margin-top: 40px;
+    font-weight: normal;
+    line-height: 27px;
+    z-index: 2; 
+}
+
+.teacher-login h1 {
+    font-size: 3.5em;
+    line-height: 70.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.teacher-login p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Center and Right-Aligned Register/Log In Section */
+.teacher-login-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: auto; 
+    margin-right: 50px; 
+    z-index: 2;
+}
+
+.teacher-login-section h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3em;
+    font-weight: bold !important;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: -230px;
+    padding-bottom: 25px;
+}
+
+/* Textbox */
+.log-input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: -190px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add specific styling for the checkbox */
+.log-options input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+/* Styling for Remember Me checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none; 
+    width: 18px; 
+    height: 18px;
+    border: 2px solid #333; 
+    border-radius: 3px; 
+    outline: none; 
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* Style for the checked state */
+.remember-me input[type="checkbox"]:checked {
+    background-color: #082F96;
+    border: 2px solid #082F96; 
+}
+
+/* Custom checkmark */
+.remember-me input[type="checkbox"]:checked::after {
+    content: '✔'; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 14px;
+}
+
+/* Styling for Forgot Password */
+.forgot-password {
+    margin-left: auto; 
+    color: #333;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #C10001; 
+    font-size: 12px;
+}
+
+/* remeber-forgot */
+.log-options {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.log-btn {
+    width: 100%;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background-color: #082F96;
+    color: white;
+    border: none;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+

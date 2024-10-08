@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Performance Evaluation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-background"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='css/Assets/DepEdLogo.png.png') }}" alt="DepEd Logo">
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"  class="active"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- About Us Background Section -->
+    <section class="about-us-background">
+        <div class="about-us-title">About Us</div>
+    </section>
+
+    <main>
+        <!-- About Us Content -->
+        <section class="about-us-content">
+            <h2 class="highlight">Our Mission</h2>
+            {% block mission %}{% endblock %}
+            <p>
+                DepEd's mission to ensure every Filipino receives quality, equitable, and culturally relevant education is reflected in its focus on student outcomes, teacher development, and a safe, inclusive learning environment. The department's performance is measured by student achievement, teacher support and training, improvements in school facilities, and strong community partnerships that enhance educational initiatives. DepEd is also dedicated to teacher development, ensuring that educators receive the necessary training, support, and professional growth opportunities.
+            </p>
+            <h2 class="highlight">Our Vision</h2>
+            <p>
+                DepEd strives to build a nation of Filipinos who are equipped with the values, skills, and knowledge necessary to contribute meaningfully to society. This vision is pursued by continuously improving the educational system to ensure that every student receives quality education in a supportive, inclusive, and learner-centered environment. The performance of DepEd in achieving this vision is measured by the extent to which Filipino students not only attend school but also develop into responsible, productive citizens who are prepared for higher education, employment, and civic life.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

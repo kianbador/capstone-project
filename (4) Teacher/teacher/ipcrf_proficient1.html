@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official IPCRF Rating Encoding Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ipcrf_proficient1_css.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="C:/Users/kimab/Desktop/school admin/assets/image 6.png" alt="DepED Logo" />
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="teacher_home.html" class="nav-link"><img src="C:/Users/kimab/Desktop/teacher/asset/House_01.png" alt="Home Icon" class="nav-icon"> Home</a></li>
+            <li><a href="teacher_evaluation.html" class="nav-link"><img src="C:/Users/kimab/Desktop/teacher/asset/Test Passed.png" alt="Evaluation Icon" class="nav-icon"> Evaluation</a></li>
+            <li><a href="teacher_forms.html" class="nav-link forms active"><img src="C:/Users/kimab/Desktop/teacher/asset/Documents1.png" alt="Forms Icon" class="nav-icon"> Forms</a></li>
+            <li><a href="teacher_summary.html" class="nav-link"><img src="C:/Users/kimab/Desktop/teacher/asset/Chart_Pie.png" alt="Summary Icon" class="nav-icon"> Summary</a></li>
+            <li><a href="teacher_profile.html" class="nav-link"><img src="C:/Users/kimab/Desktop/teacher/asset/User_01.png" alt="Profile Icon" class="nav-icon"> Profile</a></li>
+            <li><a href="#" class="logout-btn"><img src="C:/Users/kimab/Desktop/teacher/asset/Log_Out.png" alt="Logout Icon" class="nav-icon"> Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="form-header">
+        <h1>Official IPCRF Rating Encoding Form v4.2</h1>
+        <h2>Proficient Regular Teacher<br>SY 2023–2024</h2>
+    </header>
+
+    <!-- Instructions Section -->
+    <section class="instructions">
+        <h3>PART 1: INDIVIDUAL PERFORMANCE COMMITMENT AND REVIEW FORM</h3>
+        <div class="privacy-notice">
+            <p><strong>PRIVACY NOTICE:</strong> By using this tool, you agree to authorize the Department of Education to collect, process, retain, and dispose of your personal information in accordance with the Data Privacy Act of 2012.</p>
+        </div>
+        <div class="instructions-content">
+            <h4>INSTRUCTIONS:</h4>
+            <p>Part 1 shall be accomplished by the Rater during the Phase III Performance Review and Evaluation of the RPMS Cycle. Fill in empty cells (white) with needed information about the rater and approving authority.</p>
+            <h4>Classroom Observable Objective/Indicator (COI) Rating:</h4>
+            <p>To get the rating for Quality, encode COT rating per observation period by doing the following steps:</p>
+            <ol>
+                <li>Select the subject for COT.</li>
+                <li>Input the COT rating per objective.</li>
+                <li>Input the date of observation.</li>
+            </ol>
+            <p>Once all available COT ratings are inputted, encode your rating for Efficiency.</p>
+            <p><strong>Note:</strong> This form automatically transmits the COT rating to its corresponding RPMS 5-point scale.</p>
+        </div>
+    </section>
+    <div class="table-container">
+        <div class="grid-container">
+            <!-- Row 1 -->
+            <div class="grid-item name">
+                <label for="employee-name">Name of Employee:</label>
+                <input type="text" id="employee-name" name="employee-name" />
+            </div>
+            <div class="grid-item rater-lastname">
+                <label for="rater-lastname">Rater Last Name:</label>
+                <input type="text" id="rater-lastname" name="rater-lastname" />
+            </div>
+            <div class="grid-item first-name">
+                <label for="rater-firstname">Rate First Name:</label>
+                <input type="text" id="rater-firstname" name="rater-firstname" />
+            </div>
+            <div class="grid-item middle-name">
+                <label for="rater-middle">Rate Middle:</label>
+                <input type="text" id="rater-middle" name="rater-middle" />
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="grid-item position">
+                <label for="position"> Employee Position:</label>
+                <input type="text" id="position" name="position" />
+            </div>
+            <div class="grid-item position-duplicate">
+                <label for="rater-position">Rater Position:</label>
+                <input type="text" id="rater-position" name="rater-position" />
+            </div>
+            <div class="grid-item dept-email">
+                <label for="dept-email">DepEd Email:</label>
+                <input type="email" id="dept-email" name="dept-email" />
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="grid-item division">
+                <label for="division">Bureau/Center/Service/Division:</label>
+                <input type="text" id="division" name="division" />
+            </div>
+            <div class="grid-item date-of-review">
+                <label for="date-of-review">Date of Review:</label>
+                <input type="date" id="date-of-review" name="date-of-review" />
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="grid-item full-width rating-period">
+                <label for="rating-period">Rating Period:</label>
+                <input type="text" id="rating-period" name="rating-period" />
+            </div>
+        </div>
+    </div>
+    
+
+<section class="rating-tables">
+    <!-- KRA Table -->
+    <table class="ipcrf-table">
+            <thead>
+                <tr>
+                    <th>KRA</th>
+                    <th>#</th>
+                    <th>Objective</th>
+                    <th>COI/NCOI</th>
+                    <th>Weight</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- KRA 1: Content Knowledge and Pedagogy -->
+                <tr>
+                    <td rowspan="4">1. Content Knowledge and Pedagogy</td>
+                    <td>1</td>
+                    <td>Applied knowledge of content within and across curriculum teaching areas (PPST 1.1.2)</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Used a range of teaching strategies that enhance learner achievement in literacy and numeracy skills (PPST 1.4.2)</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Applied a range of teaching strategies to develop critical and creative thinking, as well as other higher-order thinking skills (PPST 1.5.2)</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Displayed proficient use of Mother Tongue, Filipino, and English to facilitate teaching and learning (PPST 1.6.2)</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+
+                <!-- KRA 2: Learning Environment & Diversity of Learners -->
+                <tr>
+                    <td rowspan="4">2. Learning Environment & Diversity of Learners</td>
+                    <td>5</td>
+                    <td>Established safe and secure learning environments to enhance learning through the consistent implementation of policies</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Maintained learning environments that promote fairness, respect, and care to encourage learning (PPST 2.2.2)</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Established a learner-centered culture by using teaching strategies that respond to their linguistic, cultural, socioeconomic, and religious backgrounds</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Adapted and used culturally appropriate teaching strategies to address the needs of learners from indigenous groups (PPST 3.5.2)</td>
+                    <td>COI</td>
+                    <td>7%</td>
+                </tr>
+
+                <!-- KRA 3: Curriculum and Planning & Assessment and Reporting -->
+                <tr>
+                    <td rowspan="3">3. Curriculum and Planning & Assessment and Reporting</td>
+                    <td>9</td>
+                    <td>Set achievable and appropriate learning outcomes that are aligned with learning competencies (PPST 4.4.2)</td>
+                    <td>NCOI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Used strategies for providing timely, accurate, and constructive feedback to improve learner performance (PPST 5.3.2)</td>
+                    <td>NCOI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Utilized assessment data to inform the modification of teaching and learning practices and programs (PPST 5.5.2)</td>
+                    <td>NCOI</td>
+                    <td>7%</td>
+                </tr>
+
+                <!-- KRA 4: Community Linkages and Professional Engagement & Personal Growth and Professional Development -->
+                <tr>
+                    <td rowspan="3">4. Community Linkages and Professional Engagement & Personal Growth and Professional Development</td>
+                    <td>12</td>
+                    <td>Built relationships with parents/guardians and the wider school community to facilitate involvement in the educative process (PPST 6.2.2)</td>
+                    <td>NCOI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Participated in professional networks to share knowledge and to enhance practice (PPST 7.3.2)</td>
+                    <td>NCOI</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Developed a personal improvement plan based on reflection of one's practice and ongoing professional learning (PPST 7.4.2)</td>
+                    <td>NCOI</td>
+                    <td>7%</td>
+                </tr>
+
+                <!-- Plus Factor KRA -->
+                <tr>
+                    <td>Plus Factor</td>
+                    <td>15</td>
+                    <td>Performed various related works/activities that contribute to the teaching-learning process</td>
+                    <td>NCOI</td>
+                    <td>2%</td>
+                </tr>
+
+                <!-- Total Percentage Row -->
+                <tr>
+                    <td colspan="4"></td>
+                    <td><strong>100%</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- COT Ratings and Score Table -->
+    <table class="evaluation-table">
+        <thead>
+            <tr>
+                <th rowspan="4">KRA</th>
+                <th rowspan="4">Objectives</th>
+                <th rowspan="4">PPST</th>
+                <th rowspan="4">COI/NCOI</th>
+                <th rowspan="4">Weight per Objective</th>
+                <th rowspan="4">COT Indicator No.</th>
+                <th colspan="8">COT Ratings</th>
+                <th rowspan="4">Ave</th>
+                <th rowspan="3" colspan="4">IPCRF Numerical Ratings</th>
+                <th rowspan="4">Score</th>
+                <th rowspan="4">Adjectival Rating</th>
+            </tr>
+            <tr>
+                <th colspan="2">COT 1</th>  
+                <th colspan="2">COT 2</th>
+                <th colspan="2">COT 3</th>
+                <th colspan="2">COT 4</th>
+            </tr>
+
+            <tr>    
+                <th colspan="2">
+                    <select>
+                        <option value="">Select Subject</option>
+                        <option value="Option1">MTB-MLE</option>
+                        <option value="Option2">Madrasah ALIVE</option>
+                        <option value="Option3">Filipino</option>
+                        <option value="Option4">English</option>
+                        <option value="Option5">Mathematics</option>
+                        <option value="Option6">Science</option>
+                        <option value="Option7">Science</option>
+                        <option value="Option8">Araling Panlipunan</option>
+                        <option value="Option9">Edukasyon sa Pagpapakatao</option>
+                        <option value="Option10">MAPEH</option>
+                        <option value="Option11">Music</option>
+                        <option value="Option12">Arts</option>
+                        <option value="Option13">Physical Education</option>
+                        <option value="Option14">Health</option>
+                        <option value="Option15">TLE/EPP-HE</option>
+                        <option value="Option16">TLE/EPP-LE/Tech-Voc</option>
+                        <option value="Option17">ALS</option>
+                        <option value="Option18">IPED</option>
+                        <option value="Option19">Special Programs</option>
+                        <option value="Option20">No Classroom Observation (w/valid reason per DM 008, 2. 2023 items 22 & 23)</option>
+                        <option value="Option21">No Classroom Observation (invalid reason)</option>
+                    </select>
+                </th>     
+                <th colspan="2">
+                    <select>
+                        <option value="">Select Subject</option>
+                        <option value="Option1">MTB-MLE</option>
+                        <option value="Option2">Madrasah ALIVE</option>
+                        <option value="Option3">Filipino</option>
+                        <option value="Option4">English</option>
+                        <option value="Option5">Mathematics</option>
+                        <option value="Option6">Science</option>
+                        <option value="Option7">Science</option>
+                        <option value="Option8">Araling Panlipunan</option>
+                        <option value="Option9">Edukasyon sa Pagpapakatao</option>
+                        <option value="Option10">MAPEH</option>
+                        <option value="Option11">Music</option>
+                        <option value="Option12">Arts</option>
+                        <option value="Option13">Physical Education</option>
+                        <option value="Option14">Health</option>
+                        <option value="Option15">TLE/EPP-HE</option>
+                        <option value="Option16">TLE/EPP-LE/Tech-Voc</option>
+                        <option value="Option17">ALS</option>
+                        <option value="Option18">IPED</option>
+                        <option value="Option19">Special Programs</option>
+                        <option value="Option20">No Classroom Observation (w/valid reason per DM 008, 2. 2023 items 22 & 23)</option>
+                        <option value="Option21">No Classroom Observation (invalid reason)</option>
+                    </select>
+                </th>  
+                <th colspan="2">
+                    <select>
+                        <option value="">Select Subject</option>
+                        <option value="Option1">MTB-MLE</option>
+                        <option value="Option2">Madrasah ALIVE</option>
+                        <option value="Option3">Filipino</option>
+                        <option value="Option4">English</option>
+                        <option value="Option5">Mathematics</option>
+                        <option value="Option6">Science</option>
+                        <option value="Option7">Science</option>
+                        <option value="Option8">Araling Panlipunan</option>
+                        <option value="Option9">Edukasyon sa Pagpapakatao</option>
+                        <option value="Option10">MAPEH</option>
+                        <option value="Option11">Music</option>
+                        <option value="Option12">Arts</option>
+                        <option value="Option13">Physical Education</option>
+                        <option value="Option14">Health</option>
+                        <option value="Option15">TLE/EPP-HE</option>
+                        <option value="Option16">TLE/EPP-LE/Tech-Voc</option>
+                        <option value="Option17">ALS</option>
+                        <option value="Option18">IPED</option>
+                        <option value="Option19">Special Programs</option>
+                        <option value="Option20">No Classroom Observation (w/valid reason per DM 008, 2. 2023 items 22 & 23)</option>
+                        <option value="Option21">No Classroom Observation (invalid reason)</option>
+                    </select>
+                </th>  
+                <th colspan="2">
+                    <select>
+                        <option value="">Select Subject</option>
+                        <option value="Option1">MTB-MLE</option>
+                        <option value="Option2">Madrasah ALIVE</option>
+                        <option value="Option3">Filipino</option>
+                        <option value="Option4">English</option>
+                        <option value="Option5">Mathematics</option>
+                        <option value="Option6">Science</option>
+                        <option value="Option7">Science</option>
+                        <option value="Option8">Araling Panlipunan</option>
+                        <option value="Option9">Edukasyon sa Pagpapakatao</option>
+                        <option value="Option10">MAPEH</option>
+                        <option value="Option11">Music</option>
+                        <option value="Option12">Arts</option>
+                        <option value="Option13">Physical Education</option>
+                        <option value="Option14">Health</option>
+                        <option value="Option15">TLE/EPP-HE</option>
+                        <option value="Option16">TLE/EPP-LE/Tech-Voc</option>
+                        <option value="Option17">ALS</option>
+                        <option value="Option18">IPED</option>
+                        <option value="Option19">Special Programs</option>
+                        <option value="Option20">No Classroom Observation (w/valid reason per DM 008, 2. 2023 items 22 & 23)</option>
+                        <option value="Option21">No Classroom Observation (invalid reason)</option>
+                    </select>
+                </th>             
+            </tr>
+
+            <tr>
+                <th>Rating</th>
+                <th>RPMS 5-pt Scale</th>
+                <th>Rating</th>
+                <th>RPMS 5-pt Scale</th>
+                <th>Rating</th>
+                <th>RPMS 5-pt Scale</th>
+                <th>Rating</th>
+                <th>RPMS 5-pt Scale</th>
+                <th>Q</th>
+                <th>E</th>
+                <th>T</th>
+                <th>Ave</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <!-- Row for KRA 1 with multiple objectives -->
+            <tr>
+                <td rowspan="4">1</td>
+                <td>1</td>
+                <td>1.1.2</td>
+                <td>COI</td>
+                <td>7.00%</td> <!-- Objective percentage -->
+                <td>1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="1"></td>
+                <td class="output-cell" data-related="1">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="2"></td>
+                <td class="output-cell" data-related="2">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="3"></td>
+                <td class="output-cell" data-related="3">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="4"></td>
+                <td class="output-cell" data-related="4">1</td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+                  
+            <tr>
+                <td>2</td>
+                <td>1.4.2</td>
+                <td>COI</td>
+                <td>7.00%</td> <!-- Objective percentage -->
+                <td>2</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="1"></td>
+                <td class="output-cell" data-related="1">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="2"></td>
+                <td class="output-cell" data-related="2">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="3"></td>
+                <td class="output-cell" data-related="3">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="4"></td>
+                <td class="output-cell" data-related="4">1</td>
+                <td class="average-cell average-class-cot" id="average-cell-2">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>            
+            <tr>
+                <td>3</td>
+                <td>1.5.2</td>
+                <td>COI</td>
+                <td>7.00%</td>
+                <td>3</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="1"></td>
+                <td class="output-cell" data-related="1">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="2"></td>
+                <td class="output-cell" data-related="2">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="3"></td>
+                <td class="output-cell" data-related="3">1</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="4"></td>
+                <td class="output-cell" data-related="4">1</td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>1.6.2</td>
+                <td>COI</td>
+                <td>7.00%</td>
+                <td>4</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="1"></td>
+                <td class="output-cell" data-related="1">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="3"></td>
+                <td class="output-cell" data-related="3">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <!-- New KRA starts here -->
+            <tr>
+                <td rowspan="4">2</td> <!-- KRA 2 spans three objectives -->
+                <td>5</td>
+                <td>2.1.2</td>
+                <td>COI</td>
+                <td>7.00%</td>
+                <td>5</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="1"></td>
+                <td class="output-cell" data-related="1">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="3"></td>
+                <td class="output-cell" data-related="3">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>2.2.2</td>
+                <td>COI</td>
+                <td>7.00%</td>
+                <td>6</td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="1"></td>
+                <td class="output-cell" data-related="1">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="3"></td>
+                <td class="output-cell" data-related="3">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>3.3.3</td>
+                <td>COI</td>
+                <td>7.00%</td>
+                <td>7</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="2"></td>
+                <td class="output-cell" data-related="2">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="4"></td>
+                <td class="output-cell" data-related="4">1</td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>3.5.2</td>
+                <td>COI</td>
+                <td>7.00%</td>
+                <td>8</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="2"></td>
+                <td class="output-cell" data-related="2">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="4"></td>
+                <td class="output-cell" data-related="4">1</td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">1.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.070</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">3</td> <!-- KRA 3 spans three objectives -->
+                <td>9</td>
+                <td>4.2.2</td>
+                <td>NCOI</td>
+                <td>7.00%</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class= "black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell rounded-average-cell"></td> 
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td  class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">0.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.000</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>5.3.2</td>
+                <td>COI</td>
+                <td>7.00%</td>
+                <td>9</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="2"></td>
+                <td class="output-cell" data-related="2">1</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell input-cell" data-index="4"></td>
+                <td class="output-cell" data-related="4">1</td>
+                <td class="average-cell average-class-cot" id="average-cell-1">1.000</td> <!-- Average of COT -->
+                <td class="rounded-average-cell">1</td> <!-- New cell for rounded average -->
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td  class="black-cell"></td>
+                <td class="average-cell average-class-ipcrf">0.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.000</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>5.5.2</td>
+                <td>NCOI</td>
+                <td>7.00%</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class= "black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell rounded-average-cell"></td> 
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="average-cell average-class-ipcrf">0.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.000</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3">4</td> <!-- KRA 4 spans three objectives -->
+                <td>12</td>
+                <td>6.2.2</td>
+                <td>NCOI</td>
+                <td>7.00%</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class= "black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell rounded-average-cell"></td> 
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="average-cell average-class-ipcrf">0.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.000</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>7.3.2</td>
+                <td>NCOI</td>
+                <td>7.00%</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class= "black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell rounded-average-cell"></td> 
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="average-cell average-class-ipcrf">0.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.000</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td>14</td>
+                <td>7.4.2</td>
+                <td>NCOI</td>
+                <td>7.00%</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class= "black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell rounded-average-cell"></td> 
+                <td contenteditable="true" class="white-cell restricted-input"></td>
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="average-cell average-class-ipcrf">0.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.000</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td rowspan="1">Plus Factor</td> <!-- Plus Factor -->
+                <td>15</td>
+                <td>15</td>
+                <td>NCOI</td>
+                <td>2.00%</td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class= "black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td class="black-cell"></td>
+                <td contenteditable="true" class="white-cell rounded-average-cell"></td> 
+                <td contenteditable="true" class="white-cell restricted-input"></td>
+                <td contenteditable="true" class="white-cell restricted-input" data-restricted="true"></td>
+                <td class="average-cell average-class-ipcrf">0.000</td> <!-- Average of IPCRF -->
+                <td class="score-cell">0.000</td> <!-- Score -->
+                <td class="rating-cell">Poor</td>
+            </tr>
+
+            <tr>
+                <td colspan="6">Date Observed</td>
+                <td colspan="2"><input type="date" /></td>                
+                <td colspan="2"><input type="date" /></td>
+                <td colspan="2"><input type="date" /></td>
+                <td colspan="2"><input type="date" /></td>
+                <td colspan="5" >Final Rating</td> <!-- Updated to allow dynamic content -->
+                <td colspan="2" class="final-rating"></td>
+            </tr>
+            
+            <tr>
+                <td colspan="6"></td>
+                <td colspan="2">Required</td>
+                <td colspan="2">Required</td>
+                <td colspan="2">Required</td>
+                <td colspan="2">Required</td>
+                <td colspan="5" >Adjectival Rating</td> <!-- Changed class for consistent naming -->
+                <td colspan="2"class="final-adjectival-rating"></td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</section>
+
+    <div class="lower-container">
+        <!-- Rater and Approving Authority Section -->
+        <div class="row">
+            <div class="rater-info">
+                <h2>Rater: </h2>
+                <p>Position</p>
+            </div>
+            <div class="approving-authority">
+                <label for="last-name">Approving Authority:</label>
+                <div class="form-row">
+                    <input type="text" id="last-name" placeholder="* Last">
+                    <input type="text" id="first-name" placeholder="* First">
+                    <input type="text" id="middle-name" placeholder="Middle">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="position" placeholder="* Position">
+                    <input type="text" id="email" placeholder="* Email">
+                </div>
+            </div>
+        </div>
+
+        <!-- Note Section -->
+        <div class="note-box">
+            <strong>NOTE:</strong> 
+            <p>When COT and QET ratings are encoded, click Finalize Part 1. Give the file copy to the teacher concerned. The teacher shall accomplish Parts 2 & 4.</p>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="button-row">
+            <button class="back-button" onclick="window.history.back();">Back</button>
+            <button class="proceed-button" onclick="location.href='ipcrf_proficient2.html'">Proceed</button>
+        </div>
+    </div>
+
+    <script>
+        const inputCells = document.querySelectorAll('.input-cell');
+        const restrictedCells = document.querySelectorAll('.restricted-input');
+        const averageCells = document.querySelectorAll('.average-cell');
+        const scoreCells = document.querySelectorAll('.score-cell');
+        const ratingCells = document.querySelectorAll('.rating-cell');
+        const finalRatingCells = document.querySelectorAll('.final-rating-cell');
+        const finalAdjectivalRatingCell = document.querySelectorAll('.final-adjectival-rating');
+    
+        function handleInput(event) {
+            const inputCell = event.target;
+            const row = inputCell.closest('tr');
+            const index = inputCell.getAttribute('data-index');
+            const userInput = parseInt(inputCell.textContent.trim(), 10);
+    
+            const outputCell = row.querySelector(`.output-cell[data-related="${index}"]`);
+    
+            // Validate input and transform for COT
+            if (!isNaN(userInput) && userInput >= 3 && userInput <= 7) {
+                outputCell.textContent = userInput - 2; // Transform input (3 -> 1, 4 -> 2, etc.)
+            } else {
+                outputCell.textContent = '1'; // Reset to default if invalid
+            }
+    
+            updateRowAveragesAndScores(row);
+        }
+    
+        function handleRestrictedInput(event) {
+            const inputCell = event.target;
+            const row = inputCell.closest('tr');
+            const userInput = parseInt(inputCell.textContent.trim(), 10);
+    
+            // Validate restricted inputs (1, 3, 5)
+            if (![1, 2, 3, 4, 5].includes(userInput)) {
+                inputCell.textContent = ''; // Clear if invalid input
+            }
+            updateRowAveragesAndScores(row);
+        }
+    
+        function updateRowAveragesAndScores(row) {
+    // Initialize variables for IPCRF and COT
+    let sumIPCRF = 0;
+    let countIPCRF = 0;
+    let sumCOT = 0;
+    let countCOT = 0;
+
+    // Get the rounded-average-cell value 
+    const roundedAverageCellValue = parseInt(row.querySelector('.rounded-average-cell').textContent.trim(), 10);
+
+    if (!isNaN(roundedAverageCellValue)) {
+        sumIPCRF += roundedAverageCellValue;
+        countIPCRF++;
+    } 
+
+    // ** IPCRF Calculation ** (for restricted-input)
+    const restrictedInputCells = row.querySelectorAll('.restricted-input');
+
+    restrictedInputCells.forEach(cell => {
+        const value = parseInt(cell.textContent.trim(), 10);
+        if (!isNaN(value)) {
+            sumIPCRF += value; // Sum valid inputs
+            countIPCRF++; // Increment valid input count
+        }
+    });
+
+    // Calculate the average for IPCRF
+    const averageIPCRF = countIPCRF > 0 ? sumIPCRF / countIPCRF : 0; // Default to 0 if no valid inputs
+    const averageCellIPCRF = row.querySelector('.average-class-ipcrf');
+    averageCellIPCRF.textContent = averageIPCRF.toFixed(3); // Display IPCRF average
+
+    // Initialize multiplier variable
+    let multiplierValue = 0;
+
+    // Loop through the cells to find the multiplier
+    const cells = row.querySelectorAll('td');
+    cells.forEach(cell => {
+        if (cell.textContent.includes('NCOI') || cell.textContent.includes('COI')) { // Check for identifiers
+            const multiplierCell = cell.nextElementSibling; // Get the next cell for the multiplier
+            multiplierValue = parseFloat(multiplierCell.textContent.trim().replace('%', '')) / 100; // Convert percentage to decimal
+        }
+    });
+
+    // Calculate the score based on IPCRF average using the dynamic multiplier
+    const score = (averageIPCRF * multiplierValue).toFixed(3);
+    const scoreCell = row.querySelector('.score-cell');
+    scoreCell.textContent = score; // Display score
+
+    // Determine the rating based on the average IPCRF
+    let rating;
+    if (averageIPCRF >= 4.5) {
+        rating = 'Outstanding';
+    } else if (averageIPCRF >= 3.5) {
+        rating = 'Very Satisfactory';
+    } else if (averageIPCRF >= 2.5) {
+        rating = 'Satisfactory';
+    } else if (averageIPCRF >= 1.5) {
+        rating = 'Unsatisfactory';
+    } else {
+        rating = 'Poor';
+    }
+
+    const ratingCell = row.querySelector('.rating-cell');
+    ratingCell.textContent = rating; // Update the rating cell
+
+    // ** COT Calculation ** (for input-cell)
+    const outputCells = row.querySelectorAll('.output-cell');
+
+    outputCells.forEach(cell => {
+        const value = parseInt(cell.textContent.trim(), 10);
+        if (!isNaN(value)) {
+            sumCOT += value; // Sum valid outputs
+            countCOT++; // Increment valid output count
+        }
+    });
+
+    // Calculate the average for COT
+    const averageCOT = countCOT > 0 ? sumCOT / countCOT : 0; // Default to 0 if no valid inputs
+    const averageCellCOT = row.querySelector('.average-class-cot');
+    averageCellCOT.textContent = averageCOT.toFixed(3); // Display COT average
+
+    // ** Rounded COT Average Calculation **
+    const roundedAverageCell = row.querySelector('.rounded-average-cell');
+    const roundedCOT = Math.round(averageCOT); // Round off the COT average
+    roundedAverageCell.textContent = roundedCOT; // Display rounded COT average
+
+    // Update final ratings after calculating other scores
+    updateFinalRatings(row);
+}
+
+function updateFinalRatings(tableRow) {
+    let sumFinalRating = 0; // Variable to hold the sum of final ratings
+
+    // Select all score-cell elements in the current row
+    const finalRatingCells = tableRow.querySelectorAll('.score-cell'); 
+
+    // Log the number of cells found
+    console.log('Number of score cells:', finalRatingCells.length);
+
+    // Loop through the selected cells and compute the sum
+    finalRatingCells.forEach(cell => {
+        const value = parseFloat(cell.textContent.trim()); // Get the numeric value
+        console.log('Cell value:', value); // Log the value of each cell
+        if (!isNaN(value)) { // Check if the value is a number
+            sumFinalRating += value; // Sum valid values
+        }
+    });
+
+    console.log('Total Final Rating:', sumFinalRating); // Log the total sum
+
+    // Update the final rating cell with the total sum
+    const finalRatingCell = tableRow.querySelector('.final-rating');
+    finalRatingCell.textContent = sumFinalRating.toFixed(3); // Display the final rating rounded to 3 decimal places
+
+    // Calculate average final rating
+    const averageFinalRating = finalRatingCells.length > 0 ? sumFinalRating / finalRatingCells.length : 0;
+
+    // Determine the adjectival rating based on the average final rating
+    let adjectivalRating;
+    if (averageFinalRating >= 4.5) {
+        adjectivalRating = 'Outstanding';
+    } else if (averageFinalRating >= 3.5) {
+        adjectivalRating = 'Very Satisfactory';
+    } else if (averageFinalRating >= 2.5) {
+        adjectivalRating = 'Satisfactory';
+    } else if (averageFinalRating >= 1.5) {
+        adjectivalRating = 'Unsatisfactory';
+    } else {
+        adjectivalRating = 'Poor';
+    }
+
+    const finalAdjectivalRatingCell = tableRow.querySelector('.final-adjectival-rating');
+    finalAdjectivalRatingCell.textContent = adjectivalRating; 
+}
+
+
+
+
+// Event listeners for input and restricted input fields
+inputCells.forEach(cell => {
+    cell.addEventListener('blur', handleInput);
+    cell.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            handleInput(event);
+            cell.blur();
+        }
+    });
+});
+
+restrictedCells.forEach(cell => {
+    cell.addEventListener('blur', handleRestrictedInput);
+    cell.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            handleRestrictedInput(event);
+            cell.blur();
+        }
+    });
+});
+
+
+scoreCells.forEach(cell => {
+    cell.addEventListener('input', (event) => {
+        const tableRow = event.target.closest('tr'); // Get the row of the modified cell
+        updateFinalRatings(tableRow); // Update ratings based on the modified row
+    });
+});
+
+
+    </script>
+    
+    
+    
+    </body>
+</html>

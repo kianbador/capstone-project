@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Performance Evaluation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin-css/admin-dashboard-home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-background"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='css/Assets/DepEdLogo.png.png') }}" alt="DepEd Logo">
+            </div>
+            <ul>
+                <li><a href="{{ url_for('admin') }}" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('admin_school_admin') }}"><i class="fas fa-user-cog"></i> Admin</a></li>
+                <li><a href="{{ url_for('admin_form') }}"><i class="fas fa-file-alt"></i> Form</a></li>
+                <li><a href="{{ url_for('admin_request') }}"><i class="fas fa-clipboard-list"></i> Request</a></li>
+                <li><a href="{{ url_for('admin_inbox') }}"><i class="fas fa-inbox"></i> Inbox</a></li>
+                <li><a href="{{ url_for('admin_school') }}"><i class="fas fa-school"></i> School</a></li>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Main content for Admin Dashboard -->
+        <section class="dashboard-content">
+            <h1>Welcome to the Admin Dashboard</h1>
+            <p>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

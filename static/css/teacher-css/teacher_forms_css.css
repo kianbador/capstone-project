@@ -1,0 +1,213 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Consistent font size for smaller buttons */
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Consistent padding */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.forms {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white; /* White background for the content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 20px; /* Adjusts spacing between the title and the button */
+}
+
+/* Divider styling */
+.divider {
+    border-bottom: 1px solid #ddd; /* Red line divider */
+    margin-top: 10px;  /* Space above the divider */
+    margin-bottom: 20px; /* Space below the divider */
+}
+
+/* Form Section styling */
+.form-section {
+    margin-bottom: 30px; /* Spacing between sections */
+}
+
+h2 {
+    background-color: #c4d1e0; /* Light blue background for headers */
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space below headers */
+}
+
+/* List styling for forms */
+ul {
+    list-style: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between items */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Form text styling */
+li span {
+    font-size: 16px;
+    color: black;
+}
+
+/* Disabled item styling */
+.disabled {
+    opacity: 0.4; /* Lower opacity for disabled items */
+}
+
+.disabled span {
+    color: grey; /* Grey text for disabled items */
+}
+
+.disabled {
+    color: grey;
+    pointer-events: none; /* Disable click events */
+    opacity: 0.6;
+}
+
+.enabled {
+    color: black;
+    pointer-events: auto; /* Enable click events */
+    opacity: 1;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+/* Filter buttons styling */
+.filters {
+    display: flex;
+    flex-direction: column; /* Stack filter buttons and search inputs vertically */
+    margin-bottom: 20px;
+}
+
+.filter-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px; /* Space between filter buttons and search inputs */
+}
+
+.filter {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding to keep size consistent */
+    color: #000000; /* Black text color for inactive filters */
+    font-weight: normal; /* Regular font weight */
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s; /* Transition for text and border */
+    display: flex; /* Flexbox to align text and number */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Active filter styling */
+.filter.active {
+    border-color: #0033cc; /* Blue border for active filter */
+    color: #0033cc; /* Blue text color for active filter */
+    background-color: #ffffff; /* Keep the background white */
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Teacher Rating Sheet</title>
+    <link rel="stylesheet" href="cot_mt1-4.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="DepEd_01.png" alt="DepED Logo">
+        </div>
+        <nav>
+            <a href="#"><img src="House_01.png" alt="Home">Home</a>
+            <a href="highlyproficient_form.html" class="active"><img src="Documents.png" alt="Forms">Forms</a>
+            <a href="cot_highlyproficient_records.html"><img src="Folders.png" alt="Records">Records</a>
+            <a href="#"><img src="Chart_Pie.png" alt="Summary">Summary</a>
+            <a href="#"><img src="User_01.png" alt="Profile">Profile</a>
+            <a href="#" style="color: red;"><img src="Log_Out.png" alt="Logout">Logout</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Rating Sheet for Master Teacher I - IV</h1>
+        <div class="tabs">
+            <a onclick="showQuarter('quarter1')" id="tab1" class="active">Quarter 1</a>
+            <a onclick="showQuarter('quarter2')" id="tab2">Quarter 2</a>
+            <a onclick="showQuarter('quarter3')" id="tab3">Quarter 3</a>
+            <a onclick="showQuarter('quarter4')" id="tab4">Quarter 4</a>
+        </div>
+
+        <div id="quarter1" class="quarter-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Michael Pelps Johnson</td>
+                        <td>Master Teacher IV</td>
+                        <td>Junior High School</td>
+                        <td>Sophia Clarke</td>
+                        <td>
+                            <a href="cot_form_mt1-4.html" id="observe1" class="button">Observe</a> | 
+                            <a href="#" id="view1" class="disabled">View</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Ella Smith</td>
+                        <td>Master Teacher I</td>
+                        <td>Junior High School</td>
+                        <td>Sophia Clarke</td>
+                        <td><span class="status">Observed</span> | <a href="view_cot_form_mt1-4.html">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quarter2" class="quarter-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Michael Pelps Johnson</td>
+                        <td>Master Teacher IV</td>
+                        <td>Junior High School</td>
+                        <td>Sophia Clarke</td>
+                        <td>
+                            <a href="COT form MT 1-4.html?status=observed" id="observe2" class="button">Observe</a> | 
+                            <a href="#" id="view2" class="disabled">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quarter3" class="quarter-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Michael Pelps Johnson</td>
+                        <td>Master Teacher IV</td>
+                        <td>Junior High School</td>
+                        <td>Sophia Clarke</td>
+                        <td>
+                            <a href="COT form MT 1-4.html?status=observed" id="observe3" class="button">Observe</a> | 
+                            <a href="#" id="view3" class="disabled">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quarter4" class="quarter-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Michael Pelps Johnson</td>
+                        <td>Master Teacher IV</td>
+                        <td>Junior High School</td>
+                        <td>Sophia Clarke</td>
+                        <td>
+                            <a href="COT form MT 1-4.html?status=observed" id="observe4" class="button">Observe</a> | 
+                            <a href="#" id="view4" class="disabled">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function showQuarter(quarter) {
+            document.querySelectorAll('.quarter-content').forEach(function(content) {
+                content.classList.add('hidden');
+            });
+
+            document.querySelectorAll('.tabs a').forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(quarter).classList.remove('hidden');
+            document.querySelector(`[onclick="showQuarter('${quarter}')"]`).classList.add('active');
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('status') === 'observed') {
+            document.querySelectorAll('.button').forEach(function(button) {
+                button.textContent = 'Observed';
+                button.classList.remove('button');
+                button.classList.add('disabled');
+            });
+
+            document.querySelectorAll('.disabled').forEach(function(button) {
+                button.classList.remove('disabled');
+                button.classList.add('button');
+                button.style.cursor = 'pointer';
+                button.style.color = '#007bff';
+            });
+        }
+    </script>
+</body>
+</html>

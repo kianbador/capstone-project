@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/school-admin-css/schooladmin_home_css.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="{{ url_for('static', filename='css/Assets/school-admin-assets/image 6.png') }}" alt="DepED Logo" />
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="{{ url_for('school_admin') }}" class="nav-link home active"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/House_011.png') }}" alt="Home Icon" class="nav-icon"> Home</a></li>
+            <li><a href="{{ url_for('school_admin_faculty') }}"class="nav-link faculty "><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Users_Group1.png') }}" alt="Faculty Icon" class="nav-icon"> Faculty</a></li>
+            <li><a href="{{ url_for('school_admin_results') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Check Document.png') }}" alt="Results Icon" class="nav-icon"> Results</a></li>
+            <li><a href="{{ url_for('school_admin_records') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Folders1.png') }}" alt="Records Icon" class="nav-icon"> Records</a></li>
+            <li><a href="{{ url_for('index') }}" class="logout-btn"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Log_Out.png') }}" alt="Logout Icon" class="nav-icon"> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <!-- Feed Section with user icon and post options -->
+        <div class="feed-section">
+            <!-- Post Box -->
+            <div class="feed-header">
+                <h3>Feeds</h3>
+            </div>
+            <div class="post-box">
+                <div class="post-box-header">
+                    <img src="assets\User_Circle.png" alt="User Icon" class="user-icon">
+                    <button id="startPostButton" class="start-post-btn">Start a post</button>
+                </div>                
+                <div class="post-options">
+                    <button class="media-btn">
+                        <img src="C:/Users/kimab/Desktop/school admin/assets/Vector.png" alt="Media Icon" class="post-icon"> Media
+                    </button>
+                    <button class="announcement-btn">
+                        <img src="C:/Users/kimab/Desktop/school admin/assets/Megaphone.png" alt="Announcement Icon" class="post-icon"> Announcement
+                    </button>
+                    <button class="mention-btn">
+                        <img src="C:/Users/kimab/Desktop/school admin/assets/Mention.png" alt="Mention Icon" class="post-icon"> Mention
+                    </button>
+                </div>
+
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <hr class="divider" /> <!-- Line Separator -->
+                    <div class="filter-container">
+                        <span>Filter by:</span>
+                        <!-- Custom Dropdown -->
+                            <div class="custom-dropdown">
+                                <div class="dropdown-selected">
+                                    <img src="assets\More_Grid_Small.png" alt="All Icon" class="option-icon" />
+                                    <span>All</span>
+                                </div>
+                                <ul class="dropdown-options">
+                                    <li data-value="all">
+                                        <img src="assets\More_Grid_Small.png" alt="All Icon" class="option-icon" /> All
+                                    </li>
+                                    <li data-value="mentions">
+                                        <img src="assets\Mention_black.png" alt="Mentions Icon" class="option-icon" /> Mentions
+                                    </li>
+                                    <li data-value="posts">
+                                        <img src="assets\User_02.png" alt="My Posts Icon" class="option-icon" /> My Posts
+                                    </li>
+                                    <li data-value="announcements">
+                                        <img src="assets\Megaphone1.png" alt="Announcements Icon" class="option-icon" /> Announcements
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Feed Section -->
+            <div id="feed" class="feed-container">
+                
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+<div class="right-sidebar">
+    <!-- Notification Section -->
+    <div class="notification-section">
+        <div class="notification-header">
+            <h3>Notification</h3>
+        </div>
+        <ul id="notificationList">
+            <!-- Notifications go here -->
+        </ul>
+    </div>
+
+    <!-- To Do Section -->
+    <div class="to-do-section">
+        <div class="to-do-header">
+            <h3>To Do</h3>
+        </div>
+        <ul id="toDoList">
+            <!-- To Do items go here -->
+        </ul>
+    </div>
+</div>
+
+    <!-- Modal for creating a post -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <textarea id="modalPostContent" placeholder="What's on your mind?"></textarea>
+            <hr class="divider"> 
+            <div class="modal-buttons">
+                <div class="left-buttons">
+                    <button id="emojiButton">
+                        <img src="assets/Happy.png" alt="Emoji" class="button-icon">
+                    </button>
+                    <button id="imageButton">
+                        <img src="assets/Image.png" alt="Add Image" class="button-icon">
+                    </button>
+                </div>
+                <button id="submitModalPost">Post</button>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <script src="{{ url_for('static', filename='js/schooladmin_home_js.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="records_rpms_css.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="C:\Users\kimab\Desktop\school admin\assets\image 6.png" alt="DepED Logo" />
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="schooladmin_home.html" class="nav-link"><img src="C:/Users/kimab/Desktop/school admin/assets/House_01.png" alt="Home Icon" class="nav-icon"> Home</a></li>
+            <li><a href="faculty.html" class="nav-link"><img src="C:/Users/kimab/Desktop/school admin/assets/Users_Group1.png" alt="Faculty Icon" class="nav-icon"> Faculty</a></li>
+            <li><a href="results.html" class="nav-link"><img src="C:/Users/kimab/Desktop/school admin/assets/Check Document.png" alt="Results Icon" class="nav-icon"> Results</a></li>
+            <li><a href="records.html" class="nav-link records active"><img src="C:/Users/kimab/Desktop/school admin/assets/Folders.png" alt="Records Icon" class="nav-icon"> Records</a></li>
+            <li><a href="#" class="logout-btn"><img src="C:/Users/kimab/Desktop/school admin/assets/Log_Out.png" alt="Logout Icon" class="nav-icon"> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Faculty</h1>
+        </header>
+
+        <div class="tabs">
+            <a href="records.html" class="tab">COT</a>
+            <a href="records_ipcrf.html" class="tab">IPCRF</a>
+            <a href="records_rpms.html" class="tab active">RPMS</a>
+        </div>
+
+        <div class="filters">
+            <div class="filter-box">
+                <select class="filter" id="school-year-filter">
+                    <option>A.Y. 2023 - 2024</option>
+                    <option>A.Y. 2022 - 2023</option>
+                    <option>A.Y. 2021 - 2022</option>
+                    <!-- Add more options here if necessary -->
+                </select>
+                <select class="filter" id="teacher-status-filter">
+                    <option>Proficient Teacher</option>
+                    <option>Highly Proficient Teacher</option>
+                    <!-- Add more options here if necessary -->
+                </select>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Grade Level</th>
+                    <th>Department</th>
+                    <th>Rater</th>
+                </tr>
+            </thead>
+            <tbody id="faculty-list">
+                <!-- Table content will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

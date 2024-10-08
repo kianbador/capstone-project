@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPMS Records</title>
+    <link rel="stylesheet" href="cot_proficient_records.css"> 
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="DepEd_01.png" alt="DepED Logo">
+        </div>
+        <nav>
+            <a href="#"><img src="House_01.png" alt="Home">Home</a>
+            <a href="Proficient Form.html"><img src="Documents (1).png" alt="Forms">Forms</a>
+            <a href="cot_proficient_records.html" class="active"><img src="Folders (2).png" alt="Records">Records</a>
+            <a href="#"><img src="Chart_Pie.png" alt="Summary">Summary</a>
+            <a href="#"><img src="User_01.png" alt="Profile">Profile</a>
+            <a href="#" style="color: red;"><img src="Log_Out.png" alt="Logout">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Records</h1>
+
+        <div class="tabs">
+            <a href="cot_proficient_records.html" class="active">COT</a>
+            <a href="ipcrf_proficient_records.html">IPRCF</a>
+            <a href="rpms_proficient_records.html">RPMS</a>
+            <a href="#" class="view-summary">View Summary</a>
+        </div>
+
+        <div class="filters">
+            <select>
+                <option>Select School Year</option>
+                <option>S.Y. 2023 - 2024</option>
+                <option>S.Y. 2022 - 2023</option>
+                <option>S.Y. 2021 - 2022</option>
+            </select>
+
+            <select name="teacher-type" id="teacherType" onchange="location = this.value;">
+                <option value="#">Select Teacher Type</option>
+                <option value="cot_proficient_records.html">Proficient Teacher</option>
+                <option value="cot_highlyproficient_records.html">Highly Proficient Teacher</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Grade Level</th>
+                    <th>Rater</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="User_Circle.png" alt="User Icon" width="25"> 
+                        Jessica Sanchez Ramirez
+                    </td>
+                    <td>Teacher II</td>
+                    <td>Junior High School</td>
+                    <td>David Patel</td>
+                    <td>Very Satisfactory <a href="#" class="view-link"> | View</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

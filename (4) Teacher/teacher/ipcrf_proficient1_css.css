@@ -1,0 +1,375 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Consistent font size for smaller buttons */
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Consistent padding */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.forms {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+/* Header Styles */
+.form-header {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+/* Instructions Section */
+.instructions {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.instructions h4 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.privacy-notice p, .instructions-content p {
+    margin-bottom: 10px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+/* Table Container */
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000 !important; /* Ensure border for inputs */
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Specific Styling for Date of Review */
+.date-of-review input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #000 !important; /* Ensure border appears */
+}
+
+/* Row 1 - Spans 1 column each */
+.name, .rater-lastname, .first-name, .middle-name {
+    grid-column: span 1;
+}
+
+/* Row 2 - "Position" spans 2 columns, "DepEd Email" spans 2 */
+.position, .position-duplicate {
+    grid-column: span 1;
+}
+
+.dept-email {
+    grid-column: span 2;
+}
+
+/* Row 3 - Bureau/Center/Service/Division spans 2 columns, Date of Review spans 2 */
+.division {
+    grid-column: span 2;
+}
+
+.date-of-review {
+    grid-column: span 2;
+}
+
+/* Row 4 - Full width Rating Period */
+.rating-period {
+    grid-column: span 4;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Rating Tables */
+.rating-tables {
+    margin-top: 20px;
+}
+
+.ipcrf-table, .score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.ipcrf-table th, .ipcrf-table td, .score-table th, .score-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.ipcrf-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* General table styles */
+.evaluation-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.evaluation-table th, .evaluation-table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.evaluation-table thead th {
+    background-color: #a8d08d; /* Light green for headers */
+}
+.evaluation-table td.black-cell {
+    background-color: black; /* Black cells for unavailable data */
+}
+.evaluation-table td.white-cell {
+    background-color: white; /* Black cells for unavailable data */
+}
+.evaluation-table td {
+    background-color: #e2efda; /* Light green for cells */
+}
+.evaluation-table th {
+    background-color: #bdd7ee; /* Lighter blue for the header */
+}
+.evaluation-table tbody td.adjectival-rating {
+    background-color: #ffffff; /* White background for the adjectival rating column */
+}
+
+input[type="date"] {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+select {
+    width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+    .evaluation-table th, .evaluation-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+
+/* Footer Styles */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*lower part*/
+.lower-container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Center both sections */
+    align-items: flex-start; /* Aligns items at the start */
+    margin-bottom: 20px; /* Adds space below the row */
+}
+
+.rater-info {
+    text-align: left;
+    margin-right: 40px; /* Adds space to the right of the rater info */
+}
+
+.rater-info h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rater-info p {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.approving-authority {
+    width: 70%; /* Fixed width for the authority section */
+    margin-left: 20px; /* Adds space to the left */
+}
+
+.approving-authority label {
+    font-weight: bold;
+}
+
+.approving-authority input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.approving-authority .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.approving-authority .form-row input {
+    flex: 1;
+}
+
+.note-box {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.note-box strong {
+    font-size: 16px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-row button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.back-button {
+    background-color: white;
+    color: #28a745; 
+    border: 1px solid #28a745;
+    border-radius: 5px; /* Optional: Keep it rounded if desired */
+    padding: 10px 20px; /* Ensure padding is set */
+    outline: none; /* Remove default outline */
+}
+
+
+.proceed-button {
+    background-color: #28a745;
+    color: white;
+}

@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header {
+    height: 30px;    
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+header img {
+    max-width: 100%;
+    max-height: 80px; 
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+nav a img {
+    height: 25px;
+    margin-right: 5px;
+}
+nav a.active {
+    color: white;
+    background-color: #C10001;
+    border-radius: 25px; 
+    padding: 5px 20px;   
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 30px; 
+}
+.feed {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px 2.5%;
+    margin: 20px;
+}
+.feeds {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.feeds h2 {
+    margin-bottom: 10px;
+}
+
+.feed-post {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start; 
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.date {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mention {
+    color: #0A840E;
+    font-weight: bold;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: gray;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+}
+
+.post-actions button i img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.post-actions button.active i img {
+    filter: hue-rotate(190deg) brightness(1.5); 
+}
+
+.comments-section {
+    display: none;
+    margin-top: 10px;
+}
+
+.comment-input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+aside {
+    flex: 1;
+}
+
+.notifications, .todo {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px 2.5%;
+    margin: 20px; 
+}
+
+.notifications h2, .todo h2 {
+    margin: 20px; 
+}

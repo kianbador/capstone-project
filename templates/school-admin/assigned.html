@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/school-admin-css/faculty_css.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="{{ url_for('static', filename='css/Assets/school-admin-assets/image 6.png') }}" alt="DepED Logo" />
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="{{ url_for('school_admin') }}" class="nav-link home"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/House_011.png') }}" alt="Home Icon" class="nav-icon"> Home</a></li>
+            <li><a href="{{ url_for('school_admin_faculty') }}"class="nav-link faculty active"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Users_Group1.png') }}" alt="Faculty Icon" class="nav-icon"> Faculty</a></li>
+            <li><a href="{{ url_for('school_admin_results') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Check Document.png') }}" alt="Results Icon" class="nav-icon"> Results</a></li>
+            <li><a href="{{ url_for('school_admin_records') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Folders1.png') }}" alt="Records Icon" class="nav-icon"> Records</a></li>
+            <li><a href="{{ url_for('index') }}" class="logout-btn"><img src="{{ url_for('static', filename='css/Assets/school-admin-assets/Log_Out.png') }}" alt="Logout Icon" class="nav-icon"> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Faculty</h1>
+            <a href="add_people_faculty.html" class="add-btn">+ Add People</a>
+        </header>
+
+        <div class="tabs">
+            <a href="{{ url_for('school_admin_faculty') }}" class="tab">All</a>
+            <a href="{{ url_for('school_admin_faculty_status') }}" class="tab">Status</a>
+            <a href="{{ url_for('school_admin_faculty_assigned') }}" class="tab  active">Assigned</a>
+            <a href="{{ url_for('school_admin_faculty_deactivated') }}" class="tab">Deactivated</a>
+            <a href="{{ url_for('school_admin_faculty_summary') }}" class="view-summary">View Summary</a>
+        </div>
+
+        <div class="filters">
+            <div class="filter-box">
+                <button class="filter all-people">All people <span id="all-count">0</span></button>
+            </div>
+            <!-- <div class="search-box">
+                <div class="search-container">
+                    <img src="C:\Users\kimab\Desktop\school admin\assets\Search_Magnifying_Glass.png" alt="Search Icon" class="search-icon"> <!-- Add your saved icon here -->
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+                <input type="text" class="filter-input" placeholder="Position">
+                <input type="text" class="filter-input" placeholder="Grade Level">
+            </div> -->
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ratee</th>
+                    <th>Position</th>
+                    <th>Grade Level</th>
+                    <th>Department</th>
+                    <th>Rater</th>
+                </tr>
+            </thead>
+            <tbody id="faculty-list">
+                <!-- Table content will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

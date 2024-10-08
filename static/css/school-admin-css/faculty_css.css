@@ -1,0 +1,283 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Reduced font size for smaller buttons */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Reduced padding for smaller button size */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.faculty {
+    color: white;
+    background-color: #d00000;
+    padding: 6px 12px; /* Reduced padding to make the red button smaller */
+    border-radius: 40px; /* Keep the rounded corners */
+    font-size: 14px; /* Match the font size with other links */
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white; /* Set background to white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 20px; /* Adjusts spacing between the title and the button */
+}
+
+.add-btn {
+    text-decoration: none;
+    background-color: #0033cc;
+    color: white;
+    padding: 8px 16px; /* Smaller padding for a more compact button */
+    border: none;
+    border-radius: 40px; /* Keeps the corner radius as requested */
+    font-weight: 500;
+    font-size: 14px; /* Reducing font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #0022aa;
+}
+
+/* Tabs styling */
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Light gray line for separation */
+    padding-bottom: 1px;
+}
+
+.tab {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from its parent */
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+
+.tab.active {
+    border-bottom: none; /* Remove the blue underline */
+    color: #0033cc; /* Keep the text color for active tab */
+}
+
+.tab:hover {
+    color: #0033cc; /* Text color changes to blue on hover */
+}
+
+.view-summary {
+    margin-left: auto;
+    color: black; /* Default color is black */
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.view-summary.active {
+    color: #0033cc; /* Changes to blue when clicked (active state) */
+}
+
+/* Filters styling */
+.filters {
+    display: flex;
+    flex-direction: column; /* Stack filter buttons and search inputs vertically */
+    margin-bottom: 20px;
+}
+
+.filter-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px; /* Space between filter buttons and search inputs */
+}
+
+.search-box {
+    display: flex;
+    gap: 10px; /* Space between inputs */
+    align-items: center; /* Align items vertically centered */
+}
+
+.search-container {
+    position: relative; /* For positioning the icon inside the input field */
+    display: flex;
+    align-items: center;
+}
+
+.search-input, .filter-input {
+    padding: 6px 8px; /* Consistent padding for all inputs */
+    border-radius: 20px; /* Same border radius */
+    border: 1px solid #ddd; /* Same border style */
+    width: 150px; /* Adjust width as needed */
+    font-size: 10px; /* Same font size */
+}
+
+.search-input {
+    padding-left: 24px; /* Space for the icon inside the input */
+}
+
+.search-icon {
+    position: absolute;
+    left: 8px; /* Position the icon inside the input */
+    width: 16px; /* Size of the icon */
+    height: 16px; /* Size of the icon */
+}
+
+/* Filter buttons styling */
+.filter {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding to keep size consistent */
+    color: #000000; /* Black text color for inactive filters */
+    font-weight: normal; /* Regular font weight */
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s; /* Transition for text and border */
+    display: flex; /* Flexbox to align text and number */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Style for the active filter button */
+.filter.active {
+    border-color: #0033cc; /* Blue border for active filter */
+    color: #0033cc; /* Blue text color for active filter */
+    background-color: #ffffff; /* Keep the background white */
+}
+
+#all-people-filter span {
+    margin-left: 8px; /* Adjusted spacing for "All people" filter */
+}
+
+#admin-filter span, #teacher-filter span, #rater-filter span, #ratee-filter span {
+    margin-left: 4px; /* Spacing for other filter buttons */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background-color: white; /* Set table header background to white */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.manage-btn {
+    background-color: #0033cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.user-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #ddd; /* Set icon background color */
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}

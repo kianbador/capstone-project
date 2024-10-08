@@ -1,0 +1,269 @@
+/* General Styles for Admin Dashboard */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; 
+}
+
+/* Header Background Styles */
+.header-background {
+    width: 100%;
+    height: 54px; 
+    background-color: #fff; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 9; 
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    z-index: 10; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    position: relative; 
+}
+
+nav ul li {
+    position: absolute; 
+}
+
+nav ul li:nth-child(1) {
+    left: 500px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(2) {
+    left: 600px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(3) {
+    left: 700px;
+    top: -2px;
+}
+
+nav ul li:nth-child(4) {
+    left: 795px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(5) {
+    left: 900px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(6) {
+    left: 1000px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(7) {
+    left: 1100px; 
+    margin-right: 20px; 
+}
+
+nav ul li:nth-child(7) a {
+    left: 1150px; 
+    top: -2px; 
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #C10001;
+}
+
+nav ul li:nth-child(7) a:hover {
+    left: 1150px; 
+    top: -2px;
+    color: #A00000; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    font-size: 13px; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; 
+    gap: -3px; 
+    margin-top: 5px;
+    transition: background-color 0.3s;
+    background-color: transparent;
+}
+
+nav ul li a i {
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+nav ul li a.active {
+    width: 60px;
+    height: 10px;
+    top: 3px;
+    background-color: #C10001; 
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+}
+
+.logo img {
+    width: 90px; 
+    height: 50px; 
+    position: absolute;
+    top: -8px;
+    left: -14px; 
+    z-index: 11; 
+}
+
+/* Container style outside the h1 (entire frame) */
+.container-frame {
+    border: 1px solid #BFBDBC; 
+    border-radius: 10px;
+    padding: 20px; 
+    margin: -15px;
+    margin-top: -40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1150px;      
+    height:1000px;
+}
+
+
+.dashboard-content {
+    padding: 140px 50px;
+    text-align: left;
+}
+
+.dashboard-content h1 {
+    color: #000000;
+    font-size: 22px;
+    margin-top: -5px;
+    margin-bottom: 40px;
+}
+
+/* Horizontal line styling below Inbox (h1) */
+.custom-hr {
+    border: none;
+    border-top: 2px solid #BFBDBC;
+    margin-top: -25px; 
+    margin-bottom: 20px;
+}
+
+
+/* Inbox container */
+.inbox-container {
+    display: flex; 
+    justify-content: center; 
+    border-radius: 10px;
+    background-color: #F8F9FA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 20px; 
+    align-items: flex-start;; 
+    gap: 20px; 
+    position: relative;
+    height: 80px;
+}
+
+/* Styles for the logo */
+.inbox-logo img {
+    margin-top: 7px;
+    margin-bottom: 5px;
+    margin-left: 20px;;
+    width: 65px; 
+    height: 65px; 
+}
+
+.inbox-content {
+    flex-grow: 1; 
+    margin-top: 20px;
+}
+
+/* Individual inbox item */
+.inbox-item {
+    height: -5px;
+    padding: 0px 0;
+    margin-bottom: 5px;
+}
+
+.inbox-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-weight: bold;
+}
+
+.inbox-sender {
+    margin-top: -12px;
+    font-size: 13px;
+    color: #082F96;
+}
+
+.inbox-subject {
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.inbox-message {
+    font-size: 9px;
+    margin-top: 2px;
+    color: #333;
+}
+
+.inbox-date {
+    color: #6C757D;
+    position: absolute;
+    font-size: 8px; 
+    margin-top: -7px;
+}
+
+/* Button styling */
+.add-school-btn {
+    background-color: #082F96;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 9px;
+    font-weight: bold;
+    height: 20px;
+    width: 83px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    right: 20px; 
+    bottom: 20px; 
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Hover effect */
+.add-school-btn:hover {
+    background-color: #061F6A; 
+}
+

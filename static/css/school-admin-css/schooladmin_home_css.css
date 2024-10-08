@@ -1,0 +1,447 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Consistent font size for smaller buttons */
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Consistent padding */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.home {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Feed Section */
+.feed-section {
+    width: 68%;
+    overflow-y: auto; /* Make the feed section scrollable */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px rgba(0.1, 0.1, 0.1, 0.1); /* Keep the shadow */
+    border: 1px solid #BFBDBC; /* Add the border outline */
+}
+
+.start-post-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    color: #888; /* Placeholder text color */
+}
+
+.start-post-btn:hover {
+    background-color: #f0f0f0;
+}
+
+
+.post-box {
+    margin-bottom: 20px;
+}
+
+.post-box-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-box-header .user-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-box-header input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.post-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post-options button {
+    display: flex;
+    align-items: center;
+    padding: 5px 90px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent; /* No background color */
+}
+
+.post-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.feed-header {
+    margin-bottom: 20px; /* Space between header and post-box */
+}
+
+.feed-header h3 {
+    font-weight: bold;
+    padding-bottom: 10px; /* Adds padding between text and line */
+    border-bottom: 1px solid #BFBDBC; /* Underline */
+    margin: 0; /* Removes any default margin */
+}
+
+
+.feed-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-post {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc; /* Border instead of background color */
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.post-actions button {
+    padding: 5px 10px;
+    background-color: transparent; /* No background color */
+    color: #d00000;
+    border: 1px solid #d00000; /* Border around buttons */
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure elements are on the same line */
+    margin-bottom: 20px; /* Space between the filter section and any content below */
+}
+
+/* Line Divider */
+.divider {
+    flex-grow: 1; /* Let the divider take up remaining space */
+    border: none;
+    border-top: 1px solid #ccc; /* Light gray line */
+    margin: 0 10px 0 0; /* Adjust margin to give space between the line and the filter */
+}
+
+/* Filter Section */
+.divider {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+/* Custom Dropdown */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: auto;
+}
+
+.dropdown-selected {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    width: 160px; /* Adjust this width as needed */
+}
+
+.dropdown-selected .option-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px; /* Set a minimum width for dropdown */
+    background-color: #fff;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown-options li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown-options li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-options .option-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Right Sidebar: Stack Notification and To Do Sections */
+.right-sidebar {
+    width: 30%; /* 30% width for the right sidebar */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between the sections */
+}
+
+/* Notification Section */
+.notification-section {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    background-color: white;
+    height: 300px;
+    overflow: auto;
+}
+
+.notification-header h3 {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BFBDBC;
+    margin: 0;
+}
+
+#notificationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* To Do Section */
+.to-do-section {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    background-color: white;
+    height: 300px;
+    overflow: auto;
+}
+
+.to-do-header h3 {
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BFBDBC;
+    margin: 0;
+}
+
+#toDoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px;
+    padding-bottom: 80px; /* Add padding at the bottom to prevent overlap */
+    border-radius: 30px;
+    width: 60%; /* Adjust the width as needed */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border: none;
+    resize: none;
+}
+
+/* Divider styling */
+.divider {
+    border: 1px solid #ccc; /* Light gray divider */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px); /* Adjust for padding */
+}
+
+.left-buttons {
+    display: flex;
+    margin-right: 5px; /* Adjust this value to control spacing between buttons */
+}
+
+.left-buttons button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+}
+
+
+.button-icon {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+    margin-right: 10px;
+}
+
+#submitModalPost {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background: #082F96; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer;
+    /* Ensure vertical alignment with other buttons */
+}
+
+
+#submitModalPost:hover {
+    background-color: #07267b;
+}
+

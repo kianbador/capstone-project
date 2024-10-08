@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="teacher_profile_edit_profile_css.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="C:/Users/kimab/Desktop/school admin/assets/image 6.png" alt="DepED Logo" />
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="teacher_home.html" class="nav-link"><img src="C:\Users\kimab\Desktop\teacher\asset\House_01.png" alt="Home Icon" class="nav-icon"> Home</a></li>
+            <li><a href="teacher_evaluation.html" class="nav-link"><img src="C:\Users\kimab\Desktop\teacher\asset\Test Passed.png" alt="Evaluation Icon" class="nav-icon"> Evaluation</a></li>
+            <li><a href="teacher_forms.html" class="nav-link"><img src="C:\Users\kimab\Desktop\teacher\asset\Documents.png" alt="Forms Icon" class="nav-icon"> Forms</a></li>
+            <li><a href="teacher_summary.html" class="nav-link"><img src="C:\Users\kimab\Desktop\teacher\asset\Chart_Pie.png" alt="Summary Icon" class="nav-icon"> Summary</a></li>
+            <li><a href="teacher_profile.html" class="nav-link profile active"><img src="C:\Users\kimab\Desktop\teacher\asset\User_011.png" alt="Profile Icon" class="nav-icon"> Profile</a></li>
+            <li><a href="#" class="logout-btn"><img src="C:\Users\kimab\Desktop\teacher\asset\Log_Out.png" alt="Logout Icon" class="nav-icon"> Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Edit Profile Form -->
+    <section class="edit-profile-section">
+        <h2>Edit Profile</h2>
+            <div class="profile-container">
+                <div class="profile-image" onclick="document.getElementById('imageUpload').click();">
+                    <img id="profileImage" src="asset/User_Circle.png" alt="Profile Image">
+                    <div class="overlay">Update Photo</div> <!-- Hover text -->
+                    <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+                </div>
+            </div>
+            <form class="profile-form">
+                <!-- First Name, Middle Name, Last Name in one row -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="First Name" required>
+                        <img src="asset/Circle_Warning.png" class="required-icon" alt="Required Icon">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Middle Name" required>
+                        <img src="asset/Circle_Warning.png" class="required-icon" alt="Required Icon">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Last Name" required>
+                        <img src="asset/Circle_Warning.png" class="required-icon" alt="Required Icon">
+                    </div>
+                </div>
+
+                <!-- Full-width Job Title -->
+                <div class="form-group full-width">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Job Title" required>
+                        <img src="asset/Circle_Warning.png" class="required-icon" alt="Required Icon">
+                    </div>
+                </div>
+
+                <!-- Full-width Department -->
+                <div class="form-group full-width">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Department" required>
+                        <img src="asset/Circle_Warning.png" class="required-icon" alt="Required Icon">
+                    </div>
+                </div>
+
+                <!-- Full-width Password -->
+                <div class="form-group full-width">
+                    <div class="input-wrapper">
+                        <input type="password" placeholder="Password" required>
+                        <img src="asset/Circle_Warning.png" class="required-icon" alt="Required Icon">
+                    </div>
+                </div>
+
+                <!-- Full-width Confirm Password -->
+                <div class="form-group full-width">
+                    <div class="input-wrapper">
+                        <input type="password" placeholder="Confirm Password" required>
+                        <img src="asset/Circle_Warning.png" class="required-icon" alt="Required Icon">
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn" onclick="window.history.back();">Cancel</button>
+                    <button type="submit" class="update-btn">Update</button>
+                </div>                
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function previewImage(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.getElementById('profileImage');
+                img.src = e.target.result; // Set the image source to the uploaded file
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>

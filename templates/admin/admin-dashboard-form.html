@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Performance Evaluation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin-css/admin-dashboard-form.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-background"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='css/Assets/DepEdLogo.png.png') }}" alt="DepEd Logo">
+            </div>
+            <ul>
+                <li><a href="{{ url_for('admin') }}" ><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('admin_school_admin') }}"><i class="fas fa-user-cog"></i> Admin</a></li>
+                <li><a href="{{ url_for('admin_form') }}" class="active"><i class="fas fa-file-alt"></i> Form</a></li>
+                <li><a href="{{ url_for('admin_request') }}"><i class="fas fa-clipboard-list"></i> Request</a></li>
+                <li><a href="{{ url_for('admin_inbox') }}"><i class="fas fa-inbox"></i> Inbox</a></li>
+                <li><a href="{{ url_for('admin_school') }}"><i class="fas fa-school"></i> School</a></li>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Main content for Admin Dashboard -->
+        <section class="dashboard-content">
+            <h1>Forms</h1>
+            <button class="create-btn"><i class="fas fa-plus"></i>Create</button>
+                
+            </button>
+            <div class="status-titles">
+                <h2 id="all-status" class="active">All</h2> <!-- Default to active -->
+                <h2 id="archived-status">Archived</h2>
+            </div>
+            <div class="horizontal-line"></div>
+            
+            <!-- Search Input Container -->
+            <!-- <div class="search-container">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i> 
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+            </div> -->
+                    </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

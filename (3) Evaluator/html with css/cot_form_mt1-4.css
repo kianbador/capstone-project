@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto; 
+    background-color: #17b2ea94;
+    padding: 5px;
+    max-width: 300px; 
+    text-align: center; 
+}
+
+h3 {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info-block {
+    width: 45%;
+    margin: 10px 2.5%;
+}
+
+.input-field {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.observation-section {
+    margin: 20px 2.5%;
+}
+
+.directions {
+    margin: 20px 2.5%;
+}
+
+h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+.rating-section table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: 20px 2.5%;
+}
+
+.rating-section td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.rating-section th {
+    background-color: #088BF3;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.rating-section td {
+    cursor: pointer;
+}
+
+
+.rating-section .checked {
+    background-color: #17B1EA;
+    color: white;
+    position: relative;
+}
+
+
+.rating-section .checked::before {
+    content: "\2714"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: black;
+}
+
+.comments-section {
+    margin: 20px 2.5%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 2.5%;
+}
+
+.signature-block {
+    width: 45%;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: #ccc;
+    border-radius: 25px;
+    padding: 5px 20px;   
+    color: white;
+}
+
+.submit {
+    background-color: #088BF3;
+    border-radius: 25px;
+    padding: 5px 20px;   
+    color: white;
+}

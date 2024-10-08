@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Performance Evaluation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header-background"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='css/Assets/DepEdLogo.png.png') }}" alt="DepEd Logo">
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="{{ url_for('contact') }}" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-us-background">
+        <div class="about-us-title">Contact Us</div>
+    </section>
+
+    <main>
+        <section class="contact-us-content">
+            <div class="contact-details">
+                <div class="contact-text">
+                    <h2>Contact Details</h2>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> DepEd Complex, Meralco Avenue, Pasig City, Metro Manila, Philippines
+                        <br><br>
+                        <i class="fas fa-envelope"></i> 305412@deped.gov.ph
+                        <br><br>
+                        <i class="fas fa-phone"></i> +63 2 637 6209
+                    </p>
+                </div>
+                <div class="contact-image">
+                    <img src="{{ url_for('static', filename='css/Assets/DepEd Location.png') }}">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

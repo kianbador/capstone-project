@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Rating Sheet</title>
+    <link rel="stylesheet" href="cot_t1-3.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="DepEd_01.png" alt="DepED Logo">
+        </div>
+        <nav>
+            <a href="#"><img src="House_01.png" alt="Home">Home</a>
+            <a href="proficient_form.html" class="active"><img src="Documents.png" alt="Forms">Forms</a>
+            <a href="cot_proficient_records.html"><img src="Folders.png" alt="Records">Records</a>
+            <a href="#"><img src="Chart_Pie.png" alt="Summary">Summary</a>
+            <a href="#"><img src="User_01.png" alt="Profile">Profile</a>
+            <a href="#" style="color: red;"><img src="Log_Out.png" alt="Logout">Logout</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Rating Sheet for Teacher I - III</h1>
+        <div class="tabs">
+            <a onclick="showQuarter('quarter1')" id="tab1" class="active">Quarter 1</a>
+            <a onclick="showQuarter('quarter2')" id="tab2">Quarter 2</a>
+            <a onclick="showQuarter('quarter3')" id="tab3">Quarter 3</a>
+            <a onclick="showQuarter('quarter4')" id="tab4">Quarter 4</a>
+        </div>
+
+        <div id="quarter1" class="quarter-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Jessica Sanchez Ramirez</td>
+                        <td>Teacher II</td>
+                        <td>Junior High School</td>
+                        <td>David Patel</td>
+                        <td>
+                            <a href="cot_form_t1-3.html" class="button">Observe</a> | 
+                            <a href="#" class="disabled">View</a>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Ethan Miller</td>
+                        <td>Teacher III</td>
+                        <td>Junior High School</td>
+                        <td>David Patel</td>
+                        <td><span class="status">Observed</span> | <a href="view_cot_form_t1-3.html">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quarter2" class="quarter-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Jessica Sanchez Ramirez</td>
+                        <td>Teacher II</td>
+                        <td>Junior High School</td>
+                        <td>David Patel</td>
+                        <td>
+                            <a href="COT form T 1-3.html" class="button">Observe</a> | 
+                            <a href="#" class="disabled">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quarter3" class="quarter-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Jessica Sanchez Ramirez</td>
+                        <td>Teacher II</td>
+                        <td>Junior High School</td>
+                        <td>David Patel</td>
+                        <td>
+                            <a href="COT form T 1-3.html" class="button">Observe</a> | 
+                            <a href="#" class="disabled">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="quarter4" class="quarter-content hidden">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Grade Level</th>
+                        <th>Rater</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="User_Circle.png" alt="User Icon" width="25"> Jessica Sanchez Ramirez</td>
+                        <td>Teacher II</td>
+                        <td>Junior High School</td>
+                        <td>David Patel</td>
+                        <td>
+                            <a href="COT form T 1-3.html" class="button">Observe</a> | 
+                            <a href="#" class="disabled">View</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function showQuarter(quarter) {
+
+            document.querySelectorAll('.quarter-content').forEach(function(content) {
+                content.classList.add('hidden');
+            });
+            
+            document.querySelectorAll('.tabs a').forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+            
+            document.getElementById(quarter).classList.remove('hidden');
+            document.querySelector(`[onclick="showQuarter('${quarter}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>

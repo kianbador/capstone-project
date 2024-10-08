@@ -1,0 +1,183 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Consistent font size for smaller buttons */
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Consistent padding */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.forms {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Form container styling */
+.form-container {
+    background-color: #B8E3F9; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #00274D; /* Dark blue text */
+}
+
+.form-details {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00274D; /* Dark blue text for form details */
+}
+
+label, select {
+    margin: 10px 0;
+    display: inline-block;
+    color: #00274D; /* Dark blue label color */
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #00274D; /* Dark blue border */
+}
+
+/* Table styling */
+.ipcrf-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.ipcrf-table th, .ipcrf-table td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+    color: #00274D; /* Dark blue text */
+}
+
+.ipcrf-table th {
+    text-align: center; /* Center text in table headers as well */
+    vertical-align: middle; /* Vertically center the text in the header */
+    background-color: #006494; /* Dark blue background for table headers */
+    color: white; /* White text in table headers */
+}
+
+/* Button styling */
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* Align buttons to opposite sides */
+    margin-top: 20px;
+}
+
+.proceed-btn {
+    background-color: #0051a2; /* Dark blue background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.back-btn {
+    background-color: white;
+    color: #0051a2; /* Dark blue text for back button */
+    border: 1px solid #0051a2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-btn:hover {
+    background-color: #003c7c; /* Darker blue on hover */
+}
+
+.back-btn:hover {
+    background-color: #e1f3fb; /* Light blue background on hover for the back button */
+}
+
+.back-btn {
+    margin-left: 0;
+}
+
+.proceed-btn {
+    margin-right: 0;
+}

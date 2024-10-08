@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Performance Evaluation System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin-css/admin-dashboard-admin.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .active {
+            font-weight: normal;
+            color: #C10001; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header-background"></div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='css/Assets/DepEdLogo.png.png') }}" alt="DepEd Logo">
+            </div>
+            <ul>
+                <li><a href="{{ url_for('admin') }}"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="{{ url_for('admin_school_admin') }}" class="active"><i class="fas fa-user-cog"></i> Admin</a></li>
+                <li><a href="{{ url_for('admin_form') }}"><i class="fas fa-file-alt"></i> Form</a></li>
+                <li><a href="{{ url_for('admin_request') }}"><i class="fas fa-clipboard-list"></i> Request</a></li>
+                <li><a href="{{ url_for('admin_inbox') }}"><i class="fas fa-inbox"></i> Inbox</a></li>
+                <li><a href="{{ url_for('admin_school') }}"><i class="fas fa-school"></i> School</a></li>
+                <li><a href="{{ url_for('index') }}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Main content for Admin Dashboard -->
+        <section class="dashboard-content">
+            <h1>Admin</h1>
+            <h2 class="section-title">All</h2>
+            <div class="horizontal-line"></div>
+            
+            <!-- Search Input Container -->
+            <!-- <div class="search-container">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+            </div> -->
+
+            <div class="school-list">
+                <!-- Wrapper for rows to manage width -->
+                <div class="school-row-wrapper">
+                    <div class="school-row header">
+                        <div class="school-column">Name</div>
+                        <div class="school-column school">School</div>
+                        <div class="school-column">Location</div>
+                        <div class="school-column">School ID</div>
+                    </div>
+                    <!-- Example of a school entry -->
+                    <div class="school-row">
+                        <div class="school-column">John Doe</div>
+                        <div class="school-column school">Benigno “Ninoy” Aquino High School</div>
+                        <div class="school-column">NCR - Taguig City</div>
+                        <div class="school-column">300951</div>
+                    </div>
+                    <!-- <div class="school-row">
+                        <div class="school-column">Liam Carter</div>
+                        <div class="school-column school">Upper Bicutan National High School</div>
+                        <div class="school-column">NCR - Taguig City</div>
+                        <div class="school-column">320605</div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

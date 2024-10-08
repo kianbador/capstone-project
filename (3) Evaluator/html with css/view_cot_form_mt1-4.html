@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Teacher Rating Sheet</title>
+    <link rel="stylesheet" href="view_cot_form_mt1-4.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <header>
+            <img src="deped.png" alt="DepEd Logo" class="logo">
+            <h1>COT – RPMS</h1>
+            <h2>Master Teacher I – IV</h2>
+            <h3>Rating Sheet</h3>
+        </header>
+
+        <section class="info-section">
+            <div class="info-block">
+                <label>OBSERVER:</label>
+                <div class="input-field">Sophia Clarke</div>
+            </div>
+            <div class="info-block">
+                <label>DATE:</label>
+                <div class="input-field">September 05, 2023</div>
+            </div>
+            <div class="info-block">
+                <label>TEACHER OBSERVED:</label>
+                <div class="input-field">Ella Smith</div>
+            </div>
+            <div class="info-block">
+                <label>QUARTER:</label>
+                <div class="input-field">Quarter 1</div>
+            </div>
+            <div class="info-block">
+                <label>SUBJECT & GRADE LEVEL TAUGHT:</label>
+                <div class="input-field">Science, Grade 8</div>
+            </div>
+            <div class="info-block">
+                <label>SCHOOL YEAR:</label>
+                <div class="input-field">2023-2024</div>
+            </div>
+            <div class="observation-section">
+                <label><b>Observation:</b></label>
+                <label><input type="checkbox" checked> 1</label>
+                <label><input type="checkbox"> 2</label>
+                <label><input type="checkbox"> 3</label>
+                <label><input type="checkbox"> 4</label>
+            </div>
+        </section>
+
+        <section class="directions">
+            <h4>DIRECTION FOR THE OBSERVERS:</h4>
+            <ol>
+                <li>Rate each item on the checklist according to how well the teacher performed during the classroom observation. Mark the appropriate column with a (✔) symbol.</li>
+                <li>Each indicator is assessed on an individual basis, regardless of its relationship to other indicators.</li>
+                <li>For schools with only one observer, this form will serve as the final rating sheet.</li>
+            </ol>
+        </section>
+
+        <section class="rating-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>INDICATORS</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>NO*</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Modeled effective applications of content knowledge within and across curriculum teaching areas.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2. Developed and applied effective teaching strategies to promote critical and creative thinking, as well as other higher-order thinking skills.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3. Modeled and supported colleagues in the proficient use of Mother Tongues, Filipino, and English to improve teaching and learning, as well as to develop the learners’ pride of their language, heritage, and culture.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4. Exhibited effective strategies that ensure safe and secure learning environments to enhance learning through the consistent implementation of policies, guidelines, and procedures.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5. Exhibited effective practices to foster learning environments that promote fairness, respect, and care to encourage learning.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6. Exhibited a learner-centered culture that promotes success by using effective teaching strategies that respond to their linguistic, cultural, socio-economic, and religious backgrounds.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7. Developed and applied teaching strategies to address effectively the needs of learners from indigenous groups.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8. Used effective strategies for providing timely, accurate, and constructive feedback to encourage learners to reflect on and improve their own learning.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="checked"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="comments-section">
+            <label><b>OTHER COMMENTS:</b></label>
+            <textarea></textarea>
+            <p><b>*NO </b>stands for <b>Not Observed</b> which automatically gets a rating of 3.</p>
+        </section>
+      
+        <br><br><br>
+        <section class="signatures">
+            <div class="signature-block">
+                <label>Signature over Printed Name of the Observer</label>
+            </div>
+            <div class="signature-block">
+                <label>Signature over Printed Name of the Teacher</label>
+            </div>
+        </section>
+
+        <section class="buttons">
+            <button class="back">Back</button>
+        </section>
+    </div>
+
+    <script>
+        function toggleCheck(cell) {
+            cell.classList.toggle('checked');
+        }
+    </script>
+</body>
+</html>

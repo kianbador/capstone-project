@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px 5%; 
+    padding: 20px;
+    background-color: white;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+}
+.header {
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #17B1EA;
+    padding: 15px;
+    margin: 20px 2.5%;
+    font-size: 30px;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px 2.5%;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+    height: 30px;
+}
+
+th {
+    background-color: #17B1EA;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-title {
+    background-color: #d9ead3;
+    font-weight: bold;
+    text-align: left;
+}
+
+.red-row {
+    background-color: #ffe6e6;
+    height: 30px;
+}
+
+.comment-section {
+    width: 95%;
+    margin: 20px 2.5%;
+}
+textarea {
+    width: 98%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.note {
+    margin: 20px 2.5%;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.signature-section p {
+    margin: 10px 0;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%; 
+    margin: 20px 2.5%;
+}
+
+.signatures div {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    padding-top: 20px; 
+}
+
+.signatures .name {
+    font-weight: bold;
+}
+
+.signatures .line {
+    display: block;
+    width: 80%; 
+    border-top: 1px solid black;
+    margin: 5px auto 0; 
+}
+
+.left-aligned-heading {
+    text-align: left !important; 
+    padding-left: 10px; 
+}
+
+.button-container {
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #082F96;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.button.back {
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #b0bec5;
+}

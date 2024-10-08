@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher-css/teacher_profile_css.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="{{ url_for('static', filename='css/Assets/DepEdLogo.png.png') }}" alt="DepED Logo" />
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="{{ url_for('teacher') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/teacher-assets/House_011.png') }}" alt="Home Icon" class="nav-icon"> Home</a></li>
+            <li><a href="{{ url_for('teacher_evaluation') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/teacher-assets/Test Passed.png') }}" alt="Evaluation Icon" class="nav-icon"> Evaluation</a></li>
+            <li><a href="{{ url_for('teacher_forms') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/teacher-assets/Documents.png') }}" alt="Forms Icon" class="nav-icon"> Forms</a></li>
+            <li><a href="{{ url_for('teacher_summary') }}" class="nav-link"><img src="{{ url_for('static', filename='css/Assets/teacher-assets/Chart_Pie.png') }}" alt="Summary Icon" class="nav-icon"> Summary</a></li>
+            <li><a href="{{ url_for('teacher_profile') }}" class="nav-link profile active"><img src="{{ url_for('static', filename='css/Assets/teacher-assets/User_01.png') }}" alt="Profile Icon" class="nav-icon"> Profile</a></li>
+            <li><a href="{{ url_for('index') }}" class="logout-btn"><img src="{{ url_for('static', filename='css/Assets/teacher-assets/Log_Out.png') }}" alt="Logout Icon" class="nav-icon"> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="asset\User_Circle.png" alt="Profile Picture" class="profile-picture">
+            <h2 class="profile-name">JESSICA SANCHEZ RAMIREZ</h2>
+            <p class="profile-role">Teacher 1</p>
+            <button class="edit-profile-btn" onclick="window.location.href='teacher_profile_edit_profile.html'">Edit Profile</button>
+
+        </div>
+
+    <div class="profile-content">
+        <div class="information-box">
+            <h3>Information</h3>
+            <p><strong>Employee ID</strong></p>
+            <p class="clickable">20-ABC12813</p>
+
+            <p><strong>Department</strong></p>
+            <p class="clickable">Junior High School</p>
+
+            <p><strong>Job Started</strong></p>
+            <p class="clickable">August 20, 2021</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Contact</h3>
+            <p><strong>Email</strong></p>
+            <p class="clickable">ramirezjessica@deped.gov.ph</p>
+
+            <p><strong>Phone</strong></p>
+            <p class="clickable">09521478611</p>
+        </div>
+    </div>
+</div>

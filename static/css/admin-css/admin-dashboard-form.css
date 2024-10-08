@@ -1,0 +1,282 @@
+/* General Styles for Admin Dashboard */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+/* Header Background Styles */
+.header-background {
+    width: 100%; 
+    height: 54px; 
+    background-color: #fff; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    z-index: 10; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    position: relative; 
+}
+
+nav ul li {
+    position: absolute; 
+}
+
+nav ul li:nth-child(1) {
+    left: 500px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(2) {
+    left: 600px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(3) {
+    left: 700px; 
+    top: -2px;
+}
+
+nav ul li:nth-child(4) {
+    left: 795px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(5) {
+    left: 900px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(6) {
+    left: 1000px; 
+    top: -2px; 
+}
+
+nav ul li:nth-child(7) {
+    left: 1100px; 
+    margin-right: 20px; 
+}
+
+nav ul li:nth-child(7) a {
+    left: 1150px;
+    top: -2px; 
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #C10001;
+}
+
+nav ul li:nth-child(7) a:hover {
+    left: 1150px; 
+    top: -2px;
+    color: #A00000; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    font-size: 13px; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; 
+    gap: -3px; 
+    margin-top: 5px;
+    transition: background-color 0.3s;
+    background-color: transparent; 
+}
+
+nav ul li a i {
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+nav ul li a.active {
+    width: 60px;
+    height: 10px;
+    top: 3px;
+    background-color: #C10001; 
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+}
+
+.logo img {
+    width: 90px; 
+    height: 50px; 
+    position: absolute;
+    top: -8px; 
+    left: -14px; 
+    z-index: 11; 
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    padding: 140px 50px;
+    text-align: left;
+}
+
+.dashboard-content h1 {
+    color: #000000;
+    font-size: 22px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+/* Search Input Container */
+.search-container {
+    margin-top: -5px; 
+    padding-left: 15px;
+    width: 180px;
+    position: relative; 
+}
+
+/* Status Titles Container */
+.status-titles {
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    gap: 50px; 
+    margin-bottom: 5px; 
+}
+
+/* Status Titles */
+.status-titles h2 {
+    font-size: 14px; 
+    color: #000000; 
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    cursor: pointer; 
+    transition: color 0.3s; 
+}
+
+.status-titles h2.active {
+    color: #082F96; 
+}
+
+
+/* Horizontal Line */
+.horizontal-line {
+    width: 100%;
+    border-top: 2px solid #BFBDBC; 
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+/* Search Input Wrapper */
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #BFBDBC;
+    border-radius: 20px;
+    padding: 2px 5px; 
+    height: 16px; 
+    background-color: #fff;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: #BFBDBC; 
+    font-size: 10px; 
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+/* Search Input Field Styles */
+.search-input {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #333;
+    background-color: transparent; 
+    padding-left: 5px; 
+}
+
+.search-input::placeholder {
+    color: #BFBDBC;
+    opacity: 1; 
+}
+
+/* Title container for h1 and Create button */
+.title-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Grouping the create button */
+.create-btn-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Create button styling */
+.create-btn {
+    font-family: 'Poppins', sans-serif;
+    background-color: #082F96; 
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: normal;
+    width: 90px;
+    height: 25px;
+    margin-top: -68px;
+    margin-bottom: 45px;
+    margin-left: 120px;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 8px; 
+    transition: background-color 0.3s ease;
+}
+
+/* Create button hover effect */
+.create-btn:hover {
+    background-color: #061F6A; 
+}
+
+/* Icon size inside Create button */
+.create-btn i {
+    font-size: 1.2em; 
+    font-weight: normal;
+}
+
+
+

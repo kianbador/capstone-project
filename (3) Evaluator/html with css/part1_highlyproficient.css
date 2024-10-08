@@ -1,0 +1,211 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.forms {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px 2.5%;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+    width: 50px;
+}
+th {
+    background-color: #17B1EA;
+    font-weight: bold;
+}
+td.red-cell {
+    background-color: #ffcccb;
+    height: 30px;
+}
+
+/* General table styles */
+.performance-table {
+    width: 95%;
+    border-collapse: collapse;
+}
+.performance-table th, .performance-table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.performance-table th, .performance-table td {
+    font-size: 10px; /* Adjust this size based on your preference */
+}
+
+.performance-table thead th {
+    background-color: #17B1EA; 
+}
+.performance-table td.black-cell {
+    background-color: black; /* Black cells for unavailable data */
+}
+
+.performance-table td.red-cell {
+    background-color: rgba(219, 17, 17, 0.21); /* Red color with 21% transparency */
+}
+
+.performance-table td.white-cell {
+    background-color: white; /* Red color with 21% transparency */
+}
+
+.performance-table td {
+    background-color: #e2efda; /* Light green for cells */
+}
+.performance-table th {
+    background-color: #bdd7ee; /* Lighter blue for the header */
+}
+.performance-table tbody {
+    background-color: #ffffff; /* White background for the adjectival rating column */
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+    .performance-table th, .performance-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Table Styling */
+.rating-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-right: 20px;
+}
+
+.rating-table th, .rating-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.rating-table th {
+    background-color: #f2f2f2;
+}
+
+/* Comment Box Styling */
+.comment-box {
+    width: 40%;
+}
+
+.comment-box label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-box textarea {
+    width: 95%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.signature-section p {
+    margin: 10px 0;
+}
+
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%; 
+    margin: 20px 2.5%;
+}
+
+.signatures div {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    padding-top: 20px; 
+}
+
+.signatures .name {
+    font-weight: bold;
+}
+
+.signatures .line {
+    display: block;
+    width: 80%; 
+    border-top: 1px solid black;
+    margin: 5px auto 0; 
+}
+.button-container {
+    margin: 20px 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #082F96;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.button.back {
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #b0bec5;
+}

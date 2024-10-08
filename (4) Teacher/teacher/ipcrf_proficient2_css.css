@@ -1,0 +1,187 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: white; /* Set background to white */
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Aligns menu to the right */
+}
+
+.navbar-menu li {
+    margin-right: 15px; /* Space between buttons */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px; /* Consistent font size for smaller buttons */
+    display: flex;
+    align-items: center; /* Center the icons and text vertically */
+    padding: 6px 10px; /* Consistent padding */
+}
+
+.nav-icon {
+    width: 20px;  /* Smaller icons */
+    height: 20px;
+    margin-right: 6px; /* Adjust icon spacing */
+    display: inline-block;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: #d00000;
+    font-size: 14px; /* Font size for logout button */
+    font-weight: bold;
+    padding: 6px 10px; /* Padding for button size */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Spacing from other items */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.forms {
+    color: white;
+    background-color: #d00000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.header h1, .header h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.header h2 {
+    margin-top: 5px;
+}
+
+.sub-header {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.sub-header h3 {
+    color: black;
+}
+
+.sub-header p {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #7ed957;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+/* Styling for different sections */
+th[colspan="2"] {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    vertical-align: middle;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button, .proceed-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-button {
+    background-color: white;
+    color: #28a745; 
+    border: 1px solid #28a745;
+    border-radius: 5px; /* Optional: Keep it rounded if desired */
+    padding: 10px 20px; /* Ensure padding is set */
+    outline: none; /* Remove default outline */
+}
+
+.proceed-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.note-section {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.note-section p {
+    margin: 0;
+    font-size: 14px;
+}
